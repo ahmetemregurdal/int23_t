@@ -3,14 +3,14 @@
 #include <stdexcept>
 #include <iostream>
 #include <string>
-#include "int23.hpp"
+#include "int23_t.hpp"
 
-char int23::fullAdder(char const&b1, char const&b2, char&carry) {
+char int23_t::fullAdder(char const&b1, char const&b2, char&carry) {
 	const char ans = b1^b2^carry;
 	carry = (b1&b2)|(b1&carry)|(b2&carry);
 	return ans;
 }
-char int23::fullSub(char const&b1, char const&b2, char&borrow) {
+char int23_t::fullSub(char const&b1, char const&b2, char&borrow) {
 	char diff;
 	if(borrow) {
 		diff = 1 ^ b1 ^ b2;
@@ -22,27 +22,27 @@ char int23::fullSub(char const&b1, char const&b2, char&borrow) {
 	}
 	return diff;
 }
-bool int23::uint23_t::operator<=(uint23_t const&rhs) const {
+bool int23_t::uint23_t::operator<=(uint23_t const&rhs) const {
 	for(int i=22; i>=0; i--) {
 		if(this->num[i]&(1^rhs.num[i])) return false;
 		if((1^this->num[i])&rhs.num[i]) return true;
 	}
 	return true;
 }
-bool int23::uint23_t::operator<(uint23_t const&rhs) const {
+bool int23_t::uint23_t::operator<(uint23_t const&rhs) const {
 	for(int i=22; i>=0; i--) {
 		if(this->num[i]&(1^rhs.num[i])) return false;
 		if((1^this->num[i])&rhs.num[i]) return true;
 	}
 	return false;
 }
-bool int23::uint23_t::operator>(uint23_t const&rhs) const {
+bool int23_t::uint23_t::operator>(uint23_t const&rhs) const {
 	return !((*this)<=rhs);
 }
-bool int23::uint23_t::operator>=(uint23_t const&rhs) const {
+bool int23_t::uint23_t::operator>=(uint23_t const&rhs) const {
 	return !((*this)<rhs);
 }
-int23::uint23_t int23::uint23_t::operator+(uint23_t const&rhs) const {
+int23_t::uint23_t int23_t::uint23_t::operator+(uint23_t const&rhs) const {
 	uint23_t ans = *this;
 	char carry = 0;
 	for(int i=0; i<23; i++) {
@@ -50,7 +50,7 @@ int23::uint23_t int23::uint23_t::operator+(uint23_t const&rhs) const {
 	}
 	return ans;
 }
-int23::uint23_t int23::uint23_t::operator-(uint23_t const&rhs) const {
+int23_t::uint23_t int23_t::uint23_t::operator-(uint23_t const&rhs) const {
 	uint23_t ans = *this;
 	char borrow = 0;
 	for(int i=0; i<23; i++) {
@@ -58,23 +58,23 @@ int23::uint23_t int23::uint23_t::operator-(uint23_t const&rhs) const {
 	}
 	return ans;
 }
-int23::uint23_t::uint23_t(int const&a): num(a) {}
-int23::uint23_t::uint23_t(): num(0) {}
-int23::uint23_t int23::uint23_t::operator<<(int const&rhs) const {
+int23_t::uint23_t::uint23_t(int const&a): num(a) {}
+int23_t::uint23_t::uint23_t(): num(0) {}
+int23_t::uint23_t int23_t::uint23_t::operator<<(int const&rhs) const {
 	uint23_t tmp = *this;
 	tmp.num <<=rhs;
 	return tmp;
 }
-int23::uint23_t int23::uint23_t::operator>>(int const&rhs) const {
+int23_t::uint23_t int23_t::uint23_t::operator>>(int const&rhs) const {
 	uint23_t tmp = *this;
 	tmp.num >>=rhs;
 	return tmp;
 }
-int23::uint23_t& int23::uint23_t::operator+=(uint23_t const&rhs) {
+int23_t::uint23_t& int23_t::uint23_t::operator+=(uint23_t const&rhs) {
 	this->num = (*this + rhs).num;
 	return *this;
 }
-int23::uint23_t int23::uint23_t::operator*(uint23_t const&rhs) const {
+int23_t::uint23_t int23_t::uint23_t::operator*(uint23_t const&rhs) const {
 	uint23_t ans;
 	if(this->num.count()<rhs.num.count()) {
 		for(int i=0; i<23; i++) if(this->num[i]) ans += (rhs<<i);
@@ -84,26 +84,26 @@ int23::uint23_t int23::uint23_t::operator*(uint23_t const&rhs) const {
 	}
 	return ans;
 }
-int23::uint23_t& int23::uint23_t::operator-=(uint23_t const&rhs) {
+int23_t::uint23_t& int23_t::uint23_t::operator-=(uint23_t const&rhs) {
 	this->num = (*this - rhs).num;
 	return *this;
 }
-int23::uint23_t& int23::uint23_t::operator*=(uint23_t const&rhs) {
+int23_t::uint23_t& int23_t::uint23_t::operator*=(uint23_t const&rhs) {
 	this->num = (*this * rhs).num;
 	return *this;
 }
-bool int23::uint23_t::operator==(uint23_t const&rhs) const {
+bool int23_t::uint23_t::operator==(uint23_t const&rhs) const {
 	return this->num == rhs.num;
 }
-int23::uint23_t& int23::uint23_t::operator<<=(int const&rhs) {
+int23_t::uint23_t& int23_t::uint23_t::operator<<=(int const&rhs) {
 	this->num = (*this << rhs).num;
 	return *this;
 }
-int23::uint23_t& int23::uint23_t::operator>>=(int const&rhs) {
+int23_t::uint23_t& int23_t::uint23_t::operator>>=(int const&rhs) {
 	this->num = (*this >> rhs).num;
 	return *this;
 }
-int23::uint23_t int23::uint23_t::operator/(uint23_t const&rhs) const {
+int23_t::uint23_t int23_t::uint23_t::operator/(uint23_t const&rhs) const {
 	if(rhs.num.none()) {
 		throw std::domain_error("Even though 23 is holy, it still doesn't have superpowers for division by zero");
 	}
@@ -139,7 +139,7 @@ int23::uint23_t int23::uint23_t::operator/(uint23_t const&rhs) const {
 	}
 	return ans;
 }
-int23::uint23_t int23::uint23_t::operator%(uint23_t const&rhs) const {
+int23_t::uint23_t int23_t::uint23_t::operator%(uint23_t const&rhs) const {
 	if(rhs.num.none()) {
 		throw std::domain_error("Even though 23 is holy, it still doesn't have superpowers for modulo of zero");
 	}
@@ -172,21 +172,21 @@ int23::uint23_t int23::uint23_t::operator%(uint23_t const&rhs) const {
 	}
 	return rem;
 }
-int23::uint23_t& int23::uint23_t::operator/=(uint23_t const&rhs) {
+int23_t::uint23_t& int23_t::uint23_t::operator/=(uint23_t const&rhs) {
 	this->num = (*this / rhs).num;
 	return *this;
 }
-int23::uint23_t& int23::uint23_t::operator%=(uint23_t const&rhs) {
+int23_t::uint23_t& int23_t::uint23_t::operator%=(uint23_t const&rhs) {
 	this->num = (*this % rhs).num;
 	return *this;
 }
-int23::uint23_t::operator bool() const {
+int23_t::uint23_t::operator bool() const {
 	return !(this->num.none());
 }
-int23::uint23_t::operator int() const {
+int23_t::uint23_t::operator int() const {
 	return this->num.to_ulong();
 }
-int23::uint23_t::operator std::string() const {
+int23_t::uint23_t::operator std::string() const {
 	std::string ans;
 	uint23_t tmp = *this;
 	while(tmp) {
@@ -197,11 +197,11 @@ int23::uint23_t::operator std::string() const {
 	if(ans.size()==0) ans.push_back('0');
 	return ans;
 }
-std::ostream& int23::operator<<(std::ostream& out, uint23_t const&num) {
+std::ostream& int23_t::operator<<(std::ostream& out, uint23_t const&num) {
 	out << std::string(num);
 	return out;
 }
-std::istream& int23::operator>>(std::istream& in, uint23_t&num) {
+std::istream& int23_t::operator>>(std::istream& in, uint23_t&num) {
 	int tmp;
 	in>>tmp;
 	num = tmp;

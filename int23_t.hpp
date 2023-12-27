@@ -2,7 +2,7 @@
 #include <bitset>
 #include <iostream>
 #include <string>
-namespace int23 {
+namespace int23_t {
 	char fullAdder(char const&b1, char const&b2, char&carry);
 	char fullSub(char const&b1, char const&b2, char&borrow);
 	class uint23_t {
