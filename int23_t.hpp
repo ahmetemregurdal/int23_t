@@ -30,7 +30,16 @@ namespace int23_t {
 		uint23_t operator%(uint23_t const&rhs) const;
 		uint23_t& operator>>=(int const&rhs);
 		uint23_t& operator<<=(int const&rhs);
+		bool operator!=(uint23_t const&rhs) const;
+		uint23_t& operator++();
+		uint23_t& operator--();
+		uint23_t operator++(int);
+		uint23_t operator--(int);
 		operator int() const;
+		operator long() const;
+		operator char() const;
+		operator size_t() const;
+		operator long long() const;
 		operator std::string() const;
 		operator bool() const;
 	};

@@ -22,25 +22,25 @@ char int23_t::fullSub(char const&b1, char const&b2, char&borrow) {
 	}
 	return diff;
 }
-bool int23_t::uint23_t::operator<=(uint23_t const&rhs) const {
-	for(int i=22; i>=0; i--) {
-		if(this->num[i]&(1^rhs.num[i])) return false;
-		if((1^this->num[i])&rhs.num[i]) return true;
-	}
-	return true;
+int23_t::uint23_t::uint23_t(int const&a): num(a) {}
+int23_t::uint23_t::uint23_t(): num(0) {}
+int23_t::uint23_t::operator int() const {
+	return this->num.to_ulong();
 }
-bool int23_t::uint23_t::operator<(uint23_t const&rhs) const {
-	for(int i=22; i>=0; i--) {
-		if(this->num[i]&(1^rhs.num[i])) return false;
-		if((1^this->num[i])&rhs.num[i]) return true;
-	}
-	return false;
+int23_t::uint23_t::operator long long() const {
+	return this->num.to_ulong();
 }
-bool int23_t::uint23_t::operator>(uint23_t const&rhs) const {
-	return !((*this)<=rhs);
+int23_t::uint23_t::operator long() const {
+	return this->num.to_ulong();
 }
-bool int23_t::uint23_t::operator>=(uint23_t const&rhs) const {
-	return !((*this)<rhs);
+int23_t::uint23_t::operator char() const {
+	return this->num.to_ulong();
+}
+int23_t::uint23_t::operator size_t() const {
+	return this->num.to_ulong();
+}
+bool int23_t::uint23_t::operator!=(uint23_t const&rhs) const {
+	return (this->num&rhs.num).none() && (!(this->num.none() && rhs.num.none()));
 }
 int23_t::uint23_t int23_t::uint23_t::operator+(uint23_t const&rhs) const {
 	uint23_t ans = *this;
@@ -58,8 +58,50 @@ int23_t::uint23_t int23_t::uint23_t::operator-(uint23_t const&rhs) const {
 	}
 	return ans;
 }
-int23_t::uint23_t::uint23_t(int const&a): num(a) {}
-int23_t::uint23_t::uint23_t(): num(0) {}
+int23_t::uint23_t& int23_t::uint23_t::operator+=(uint23_t const&rhs) {
+	this->num = (*this + rhs).num;
+	return *this;
+}
+int23_t::uint23_t& int23_t::uint23_t::operator-=(uint23_t const&rhs) {
+	this->num = (*this - rhs).num;
+	return *this;
+}
+int23_t::uint23_t& int23_t::uint23_t::operator--() {
+	*this -= 1;
+	return *this;
+}
+int23_t::uint23_t& int23_t::uint23_t::operator++() {
+	*this += 1;
+	return *this;
+}
+int23_t::uint23_t int23_t::uint23_t::operator--(int) {
+	--(*this);
+	return *this + uint23_t(1);
+}
+int23_t::uint23_t int23_t::uint23_t::operator++(int) {
+	++(*this);
+	return *this - uint23_t(1);
+}
+bool int23_t::uint23_t::operator<=(uint23_t const&rhs) const {
+	for(uint23_t i=22; i!=uint23_t(0); --i) {
+		if(this->num[i]&(1^rhs.num[i])) return false;
+		if((1^this->num[i])&rhs.num[i]) return true;
+	}
+	return true;
+}
+bool int23_t::uint23_t::operator<(uint23_t const&rhs) const {
+	for(uint23_t i=22; i>=uint23_t(0); --i) {
+		if(this->num[i]&(1^rhs.num[i])) return false;
+		if((1^this->num[i])&rhs.num[i]) return true;
+	}
+	return false;
+}
+bool int23_t::uint23_t::operator>(uint23_t const&rhs) const {
+	return !((*this)<=rhs);
+}
+bool int23_t::uint23_t::operator>=(uint23_t const&rhs) const {
+	return !((*this)<rhs);
+}
 int23_t::uint23_t int23_t::uint23_t::operator<<(int const&rhs) const {
 	uint23_t tmp = *this;
 	tmp.num <<=rhs;
@@ -70,23 +112,15 @@ int23_t::uint23_t int23_t::uint23_t::operator>>(int const&rhs) const {
 	tmp.num >>=rhs;
 	return tmp;
 }
-int23_t::uint23_t& int23_t::uint23_t::operator+=(uint23_t const&rhs) {
-	this->num = (*this + rhs).num;
-	return *this;
-}
 int23_t::uint23_t int23_t::uint23_t::operator*(uint23_t const&rhs) const {
 	uint23_t ans;
 	if(this->num.count()<rhs.num.count()) {
-		for(int i=0; i<23; i++) if(this->num[i]) ans += (rhs<<i);
+		for(uint23_t i=0; i<uint23_t(23); i++) if(this->num[i]) ans += (rhs<<i);
 	}
 	else {
-		for(int i=0; i<23; i++) if(rhs.num[i]) ans += ((*this)<<i);
+		for(uint23_t i=0; i<uint23_t(23); i++) if(rhs.num[i]) ans += ((*this)<<i);
 	}
 	return ans;
-}
-int23_t::uint23_t& int23_t::uint23_t::operator-=(uint23_t const&rhs) {
-	this->num = (*this - rhs).num;
-	return *this;
 }
 int23_t::uint23_t& int23_t::uint23_t::operator*=(uint23_t const&rhs) {
 	this->num = (*this * rhs).num;
@@ -118,19 +152,20 @@ int23_t::uint23_t int23_t::uint23_t::operator/(uint23_t const&rhs) const {
 	if(*this < rhs) {
 		return ans;
 	}
-	int sig_x, sig_y;
-	for(int i=22; i>=0; i--) {
+	uint23_t sig_x, sig_y;
+	for(uint23_t i=22; i>=uint23_t(0); --i) {
 		sig_x = i;
 		if(this->num[i]) break;
 	}
-	for(int i=22; i>=0; i--) {
+	for(uint23_t i=22; i>=uint23_t(0); --i) {
 		sig_y = i;
 		if(rhs.num[i]) break;
 	}
-	int diff = sig_x - sig_y;
+	uint23_t diff = sig_x - sig_y;
 	tmp <<= diff;
-	diff++;
-	while(diff--) {
+	++diff;
+	++diff;
+	while(--diff) {
 		if(tmp<=rem) {
 			ans.num[diff] = 1;
 			rem -= tmp;
@@ -161,7 +196,7 @@ int23_t::uint23_t int23_t::uint23_t::operator%(uint23_t const&rhs) const {
 		sig_y = i;
 		if(rhs.num[i]) break;
 	}
-	int diff = sig_x - sig_y;
+	uint23_t diff = sig_x - sig_y;
 	tmp <<= diff;
 	diff++;
 	while(diff--) {
@@ -182,9 +217,6 @@ int23_t::uint23_t& int23_t::uint23_t::operator%=(uint23_t const&rhs) {
 }
 int23_t::uint23_t::operator bool() const {
 	return !(this->num.none());
-}
-int23_t::uint23_t::operator int() const {
-	return this->num.to_ulong();
 }
 int23_t::uint23_t::operator std::string() const {
 	std::string ans;
