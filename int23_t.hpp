@@ -46,6 +46,8 @@ namespace int23_t {
 		uint23_t& operator^=(uint23_t const&rhs);
 		operator std::string() const;
 	};
+	const uint23_t UINT23_MAX(8388607);
+	const uint23_t UINT23_MIN(0);
 	std::ostream& operator<< (std::ostream&out, uint23_t const&num);
 	std::istream& operator>> (std::istream&in, uint23_t&num);
 }
