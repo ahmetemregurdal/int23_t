@@ -225,3 +225,30 @@ int23_t::uint23_t int23_t::uint23_t::operator--(int) {
 	this->operator-=(1);
 	return *this + uint23_t(1);
 }
+int23_t::uint23_t int23_t::uint23_t::operator&(uint23_t const&rhs) const {
+	uint23_t ans = *this;
+	ans.num &= rhs.num;
+	return ans;
+}
+int23_t::uint23_t int23_t::uint23_t::operator^(uint23_t const&rhs) const {
+	uint23_t ans = *this;
+	ans.num ^= rhs.num;
+	return ans;
+}
+int23_t::uint23_t int23_t::uint23_t::operator|(uint23_t const&rhs) const {
+	uint23_t ans = *this;
+	ans.num |= rhs.num;
+	return ans;
+}
+int23_t::uint23_t& int23_t::uint23_t::operator&=(uint23_t const&rhs) {
+	this->num &= rhs.num;
+	return *this;
+}
+int23_t::uint23_t& int23_t::uint23_t::operator|=(uint23_t const&rhs) {
+	this->num |= rhs.num;
+	return *this;
+}
+int23_t::uint23_t& int23_t::uint23_t::operator^=(uint23_t const&rhs) {
+	this->num ^= rhs.num;
+	return *this;
+}

@@ -38,6 +38,12 @@ namespace int23_t {
 		uint23_t operator%(uint23_t const&rhs) const;
 		uint23_t& operator>>=(int const&rhs);
 		uint23_t& operator<<=(int const&rhs);
+		uint23_t operator&(uint23_t const&rhs) const;
+		uint23_t operator|(uint23_t const&rhs) const;
+		uint23_t operator^(uint23_t const&rhs) const;
+		uint23_t& operator&=(uint23_t const&rhs);
+		uint23_t& operator|=(uint23_t const&rhs);
+		uint23_t& operator^=(uint23_t const&rhs);
 		operator std::string() const;
 	};
 	std::ostream& operator<< (std::ostream&out, uint23_t const&num);
