@@ -3,6 +3,7 @@
 #include <stdexcept>
 #include <iostream>
 #include <string>
+#include <type_traits>
 #include "int23_t.hpp"
 
 char int23_t::fullAdder(char const&b1, char const&b2, char&carry) {
@@ -58,7 +59,10 @@ int23_t::uint23_t int23_t::uint23_t::operator-(uint23_t const&rhs) const {
 	}
 	return ans;
 }
-int23_t::uint23_t::uint23_t(int const&a): num(a) {}
+template <typename T, typename std::enable_if<std::is_arithmetic<T>::value, int>::type>
+int23_t::uint23_t::uint23_t(T const&a) {
+	this->num = std::bitset<23>(a);
+}
 int23_t::uint23_t::uint23_t(): num(0) {}
 int23_t::uint23_t int23_t::uint23_t::operator<<(int const&rhs) const {
 	uint23_t tmp = *this;
@@ -180,10 +184,8 @@ int23_t::uint23_t& int23_t::uint23_t::operator%=(uint23_t const&rhs) {
 	this->num = (*this % rhs).num;
 	return *this;
 }
-int23_t::uint23_t::operator bool() const {
-	return !(this->num.none());
-}
-int23_t::uint23_t::operator int() const {
+template <typename T, typename std::enable_if<std::is_arithmetic<T>::value, int>::type>
+int23_t::uint23_t::operator T() const {
 	return this->num.to_ulong();
 }
 int23_t::uint23_t::operator std::string() const {
@@ -206,4 +208,20 @@ std::istream& int23_t::operator>>(std::istream& in, uint23_t&num) {
 	in>>tmp;
 	num = tmp;
 	return in;
+}
+int23_t::uint23_t& int23_t::uint23_t::operator++() {
+	this->operator+=(1);
+	return *this;
+}
+int23_t::uint23_t& int23_t::uint23_t::operator--() {
+	this->operator-=(1);
+	return *this;
+}
+int23_t::uint23_t int23_t::uint23_t::operator++(int) {
+	this->operator+=(1);
+	return *this - uint23_t(1);
+}
+int23_t::uint23_t int23_t::uint23_t::operator--(int) {
+	this->operator-=(1);
+	return *this + uint23_t(1);
 }

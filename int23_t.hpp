@@ -2,6 +2,7 @@
 #include <bitset>
 #include <iostream>
 #include <string>
+#include <type_traits>
 namespace int23_t {
 	char fullAdder(char const&b1, char const&b2, char&carry);
 	char fullSub(char const&b1, char const&b2, char&borrow);
@@ -16,7 +17,10 @@ namespace int23_t {
 		uint23_t operator+(uint23_t const&rhs) const;
 		uint23_t operator-(uint23_t const&rhs) const;
 		uint23_t operator*(uint23_t const&rhs) const;
-		uint23_t(int const&a);
+		template <typename T, typename std::enable_if<std::is_arithmetic<T>::value, int>::type = 0>
+		uint23_t(T const&a);
+		template <typename T, typename std::enable_if<std::is_arithmetic<T>::value, int>::type = 0>
+		operator T() const;
 		uint23_t();
 		uint23_t operator<<(int const&rhs) const;
 		uint23_t operator>>(int const&rhs) const;
@@ -25,14 +29,16 @@ namespace int23_t {
 		uint23_t& operator*=(uint23_t const&rhs);
 		uint23_t& operator/=(uint23_t const&rhs);
 		uint23_t& operator%=(uint23_t const&rhs);
+		uint23_t& operator++();
+		uint23_t& operator--();
+		uint23_t operator++(int);
+		uint23_t operator--(int);
 		bool operator==(uint23_t const&rhs) const;
 		uint23_t operator/(uint23_t const&rhs) const;
 		uint23_t operator%(uint23_t const&rhs) const;
 		uint23_t& operator>>=(int const&rhs);
 		uint23_t& operator<<=(int const&rhs);
-		operator int() const;
 		operator std::string() const;
-		operator bool() const;
 	};
 	std::ostream& operator<< (std::ostream&out, uint23_t const&num);
 	std::istream& operator>> (std::istream&in, uint23_t&num);
