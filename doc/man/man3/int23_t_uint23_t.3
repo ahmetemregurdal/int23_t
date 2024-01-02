@@ -59,15 +59,19 @@ int23_t::uint23_t \- Unsigned 23 bit integer\&.
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator>>\fP (int const &rhs) const"
 .br
+.RI "Right bitshift operator, same thing as dividing by 2 n times\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator+=\fP (\fBuint23_t\fP const &rhs)"
 .br
+.RI "Operator for adding an \fBuint23_t\fP's value to the left \fBuint23_t\fP\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator\-=\fP (\fBuint23_t\fP const &rhs)"
 .br
+.RI "Operator for substracting an \fBuint23_t\fP's value from the left \fBuint23_t\fP\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator*=\fP (\fBuint23_t\fP const &rhs)"
 .br
+.RI "Operator for multiplying an \fBuint23_t\fP with the one in the right\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator/=\fP (\fBuint23_t\fP const &rhs)"
 .br
@@ -77,18 +81,23 @@ int23_t::uint23_t \- Unsigned 23 bit integer\&.
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator++\fP ()"
 .br
+.RI "prefix increment operator "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator\-\-\fP ()"
 .br
+.RI "prefix decrement operator "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator++\fP (int)"
 .br
+.RI "postfix increment operator "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator\-\-\fP (int)"
 .br
+.RI "postfix decrement operator "
 .ti -1c
 .RI "bool \fBoperator==\fP (\fBuint23_t\fP const &rhs) const"
 .br
+.RI "Checks if two \fBuint23_t\fP are same\&. "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator/\fP (\fBuint23_t\fP const &rhs) const"
 .br
@@ -122,6 +131,7 @@ int23_t::uint23_t \- Unsigned 23 bit integer\&.
 .ti -1c
 .RI "\fBoperator std::string\fP () const"
 .br
+.RI "Converting \fBuint23_t\fP to string in base 10\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
@@ -165,6 +175,17 @@ An operator to multiply an \fBuint23_t\fP with another\&.
 .RE
 .PP
 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator*= (\fBuint23_t\fP const & rhs)"
+
+.PP
+Operator for multiplying an \fBuint23_t\fP with the one in the right\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP the number current number is multiplied by\&.
+.RE
+.PP
+The value of current number is multiplied by rhs and then returned\&. See also \fBoperator*()\fP 
 .SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator+ (\fBuint23_t\fP const & rhs) const"
 
 .PP
@@ -176,6 +197,25 @@ An operator to add two \fBuint23_t\fP's together\&.
 .RE
 .PP
 Uses \fBfullAdder()\fP function to calculate sum of two \fBuint23_t\fP's 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator++ ()"
+
+.PP
+prefix increment operator Same as \fBoperator+=(uint23_t const& 1)\fP 
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator++ (int)"
+
+.PP
+postfix increment operator The current value is returned and than 1 is added to the current value\&. Same as \fBoperator++()\fP return ::operator-(1) 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator+= (\fBuint23_t\fP const & rhs)"
+
+.PP
+Operator for adding an \fBuint23_t\fP's value to the left \fBuint23_t\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP The number added to current number
+.RE
+.PP
+The value of rhs is added to current number and current number is returned\&. See also \fBoperator+()\fP 
 .SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator\- (\fBuint23_t\fP const & rhs) const"
 
 .PP
@@ -187,6 +227,25 @@ An operator to substract an \fBuint23_t\fP from another\&.
 .RE
 .PP
 Uses \fBfullSub()\fP function to calculate difference of two \fBuint23_t\fP's 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator\-\- ()"
+
+.PP
+prefix decrement operator Same as \fBoperator-=(uint23_t const& 1)\fP 
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator\-\- (int)"
+
+.PP
+postfix decrement operator The current value is returned and than 1 is substracted from the current value\&. Same as \fBoperator--()\fP return ::operator+(1) 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator\-= (\fBuint23_t\fP const & rhs)"
+
+.PP
+Operator for substracting an \fBuint23_t\fP's value from the left \fBuint23_t\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP The number substracted from the current number
+.RE
+.PP
+The value of rhs is substracted from current number and current number is returned\&. See also \fBoperator-()\fP 
 .SS "bool int23_t::uint23_t::operator< (\fBuint23_t\fP const & rhs) const"
 
 .PP
@@ -220,6 +279,17 @@ An operator to find if left \fBuint23_t\fP is smaller or equal to right \fBuint2
 .RE
 .PP
 If two bitsets are same, function returns true\&. Else it finds the first location where bits differ, and returns false if left side integers that bit is 1, returns true otherwise 
+.SS "bool int23_t::uint23_t::operator== (\fBuint23_t\fP const & rhs) const"
+
+.PP
+Checks if two \fBuint23_t\fP are same\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
+.RE
+.PP
+Individualy checks every bit and if a single is different returns false, else returns true\&. 
 .SS "bool int23_t::uint23_t::operator> (\fBuint23_t\fP const & rhs) const"
 
 .PP
@@ -242,6 +312,17 @@ An operator to find if left \fBuint23_t\fP is greater or equal to right \fBuint2
 .RE
 .PP
 If two bitsets are same, function returns true\&. Else it finds the first location where bits differ, and returns true if left side integers that bit is 1, returns false otherwise 
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator>> (int const & rhs) const"
+
+.PP
+Right bitshift operator, same thing as dividing by 2 n times\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP The number of times \fBuint23_t\fP's bits are shifted\&. 
+.RE
+.PP
+
 
 .SH "Author"
 .PP 

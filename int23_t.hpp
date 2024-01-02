@@ -108,16 +108,59 @@ namespace int23_t {
 		 * Uses std::bitset::operator<< internally, see also https://en.cppreference.com/w/cpp/utility/bitset/operator_ltltgtgt
 		 */
 		uint23_t operator<<(int const&rhs) const;
+        /*! @brief Right bitshift operator, same thing as dividing by 2 n times.
+         * @param[in] rhs The number of times uint23_t's bits are shifted.
+         */
 		uint23_t operator>>(int const&rhs) const;
+        /*! @brief Operator for adding an uint23_t's value to the left uint23_t
+         * @param[in] rhs The number added to current number
+         *
+         * The value of rhs is added to current number and current number is returned.
+         * See also ::operator+()
+         */
 		uint23_t& operator+=(uint23_t const&rhs);
+        /*! @brief Operator for substracting an uint23_t's value from the left uint23_t
+         * @param[in] rhs The number substracted from the current number
+         *
+         * The value of rhs is substracted from current number and current number is returned.
+         * See also ::operator-()
+         */
 		uint23_t& operator-=(uint23_t const&rhs);
+        /*! @brief Operator for multiplying an uint23_t with the one in the right
+         * @param[in] rhs the number current number is multiplied by.
+         *
+         * The value of current number is multiplied by rhs and then returned. See also ::operator*()
+         */
 		uint23_t& operator*=(uint23_t const&rhs);
 		uint23_t& operator/=(uint23_t const&rhs);
 		uint23_t& operator%=(uint23_t const&rhs);
+        /*! @brief prefix increment operator
+         *
+         * Same as ::operator+=(uint23_t const& 1)
+         */
 		uint23_t& operator++();
+        /*! @brief prefix decrement operator
+         *
+         * Same as ::operator-=(uint23_t const& 1)
+         */
 		uint23_t& operator--();
+        /*! @brief postfix increment operator
+         *
+         * The current value is returned and than 1 is added to the current value.
+         * Same as ::operator++() return ::operator-(1)
+         */
 		uint23_t operator++(int);
+        /*! @brief postfix decrement operator
+         *
+         * The current value is returned and than 1 is substracted from the current value.
+         * Same as ::operator--() return ::operator+(1)
+         */
 		uint23_t operator--(int);
+        /*! @brief Checks if two uint23_t are same
+         * @param rhs Right hand side uint23_t
+         * 
+         * Individualy checks every bit and if a single is different returns false, else returns true.
+         */
 		bool operator==(uint23_t const&rhs) const;
 		uint23_t operator/(uint23_t const&rhs) const;
 		uint23_t operator%(uint23_t const&rhs) const;
@@ -129,6 +172,8 @@ namespace int23_t {
 		uint23_t& operator&=(uint23_t const&rhs);
 		uint23_t& operator|=(uint23_t const&rhs);
 		uint23_t& operator^=(uint23_t const&rhs);
+        /*! @brief Converting uint23_t to string in base 10
+         */
 		operator std::string() const;
 	};
 	const uint23_t UINT23_MAX(8388607); /*!< The maximum value of integers of class uint23_t */

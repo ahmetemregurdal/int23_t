@@ -57,27 +57,45 @@
 
 <para>Left bitshift operator, same thing as multiplying by 2 n times. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a5d83b3c00134b03455b3c6e823c3c120"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator&gt;&gt;</emphasis> (int const &amp;rhs) const</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <link linkend="_classint23__t_1_1uint23__t_1a5d83b3c00134b03455b3c6e823c3c120">operator&gt;&gt;</link> (int const &amp;rhs) const</para>
+
+<para>Right bitshift operator, same thing as dividing by 2 n times. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a481b231de5db4cc6b54906f05018a75a"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator+=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1a481b231de5db4cc6b54906f05018a75a">operator+=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+
+<para>Operator for adding an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s value to the left <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1af1c153ec6ea441fc40d190c53487cdb3"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator-=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1af1c153ec6ea441fc40d190c53487cdb3">operator-=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+
+<para>Operator for substracting an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s value from the left <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a9a070fe5e8d807630d67f3b9a4249b66"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator*=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1a9a070fe5e8d807630d67f3b9a4249b66">operator*=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+
+<para>Operator for multiplying an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> with the one in the right. </para>
 </listitem>
             <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1acbcad2bdabd875ead20f69d4a5209a6f"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator/=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
 </listitem>
             <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1aab9faa266b1f45f65a2fa2da63d328d9"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator%=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1af5f2c04bfc4ccb9e8ceadad4ac03a483"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator++</emphasis> ()</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1af5f2c04bfc4ccb9e8ceadad4ac03a483">operator++</link> ()</para>
+
+<para>prefix increment operator </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a70574f4759c7087d4597bbd8141a0023"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator--</emphasis> ()</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1a70574f4759c7087d4597bbd8141a0023">operator--</link> ()</para>
+
+<para>prefix decrement operator </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a18eabad81a1159f123ce93ce3f22e26d"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator++</emphasis> (int)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <link linkend="_classint23__t_1_1uint23__t_1a18eabad81a1159f123ce93ce3f22e26d">operator++</link> (int)</para>
+
+<para>postfix increment operator </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1aec0919e3cc5a7d86b47f3f9e3e1ee922"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator--</emphasis> (int)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <link linkend="_classint23__t_1_1uint23__t_1aec0919e3cc5a7d86b47f3f9e3e1ee922">operator--</link> (int)</para>
+
+<para>postfix decrement operator </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a94b492ea873722c57de6997d17ead8f1"/>bool <emphasis role="strong">operator==</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+            <listitem><para>bool <link linkend="_classint23__t_1_1uint23__t_1a94b492ea873722c57de6997d17ead8f1">operator==</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>Checks if two <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> are same. </para>
 </listitem>
             <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1af9a23f0211cd1107804f070cdd481736"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator/</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
 </listitem>
@@ -100,6 +118,8 @@
             <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1ab05535887b8a002615de9ce1151ef89c"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator^=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
 </listitem>
             <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a5d7f1c5e33015c45ed7c13871e8c23e4"/><emphasis role="strong">operator std::string</emphasis> () const</para>
+
+<para>Converting <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> to string in base 10. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -203,6 +223,38 @@ Parameters</title>
 </formalpara>
 </para>
 </section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a9a070fe5e8d807630d67f3b9a4249b66"/><section>
+    <title>operator*=()</title>
+<indexterm><primary>operator*=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator*=</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator*= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs)</computeroutput></para><para>
+
+<para>Operator for multiplying an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> with the one in the right. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>the number current number is multiplied by.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                The value of current number is multiplied by rhs and then returned. See also <link linkend="_classint23__t_1_1uint23__t_1a2b9ff8feeef2f153718423610c9d81d2">operator*()</link> </para>
+</section>
 <anchor xml:id="_classint23__t_1_1uint23__t_1ad0f2f7227ac42fa8900e2491a0ee8cdc"/><section>
     <title>operator+()</title>
 <indexterm><primary>operator+</primary><secondary>int23_t::uint23_t</secondary></indexterm>
@@ -235,6 +287,60 @@ Parameters</title>
                 </formalpara>
                 Uses <link linkend="_int23__t_8hpp_1af5ade1fac67088c662c08a88e2358ae6">fullAdder()</link> function to calculate sum of two <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s </para>
 </section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1af5f2c04bfc4ccb9e8ceadad4ac03a483"/><section>
+    <title>operator++()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator++</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator++</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator++ ( )</computeroutput></para><para>
+
+<para>prefix increment operator </para>
+</para>
+
+<para>Same as <link linkend="_classint23__t_1_1uint23__t_1a481b231de5db4cc6b54906f05018a75a">operator+=(uint23_t const&amp; 1)</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a18eabad81a1159f123ce93ce3f22e26d"/><section>
+    <title>operator++()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator++</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator++</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> int23_t::uint23_t::operator++ (int )</computeroutput></para><para>
+
+<para>postfix increment operator </para>
+</para>
+
+<para>The current value is returned and than 1 is added to the current value. Same as <link linkend="_classint23__t_1_1uint23__t_1af5f2c04bfc4ccb9e8ceadad4ac03a483">operator++()</link> return ::operator-(1) </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a481b231de5db4cc6b54906f05018a75a"/><section>
+    <title>operator+=()</title>
+<indexterm><primary>operator+=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator+=</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator+= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs)</computeroutput></para><para>
+
+<para>Operator for adding an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s value to the left <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>The number added to current number</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                The value of rhs is added to current number and current number is returned. See also <link linkend="_classint23__t_1_1uint23__t_1ad0f2f7227ac42fa8900e2491a0ee8cdc">operator+()</link> </para>
+</section>
 <anchor xml:id="_classint23__t_1_1uint23__t_1a29171ddcce02e2a475bdb4c55dd75740"/><section>
     <title>operator-()</title>
 <indexterm><primary>operator-</primary><secondary>int23_t::uint23_t</secondary></indexterm>
@@ -266,6 +372,60 @@ Parameters</title>
                     </para>
                 </formalpara>
                 Uses <link linkend="_int23__t_8hpp_1a4db13892bc7f11d6698b6bb72bf73a1f">fullSub()</link> function to calculate difference of two <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a70574f4759c7087d4597bbd8141a0023"/><section>
+    <title>operator--()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator--</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator--</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator-- ( )</computeroutput></para><para>
+
+<para>prefix decrement operator </para>
+</para>
+
+<para>Same as <link linkend="_classint23__t_1_1uint23__t_1af1c153ec6ea441fc40d190c53487cdb3">operator-=(uint23_t const&amp; 1)</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1aec0919e3cc5a7d86b47f3f9e3e1ee922"/><section>
+    <title>operator--()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator--</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator--</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> int23_t::uint23_t::operator-- (int )</computeroutput></para><para>
+
+<para>postfix decrement operator </para>
+</para>
+
+<para>The current value is returned and than 1 is substracted from the current value. Same as <link linkend="_classint23__t_1_1uint23__t_1a70574f4759c7087d4597bbd8141a0023">operator--()</link> return ::operator+(1) </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1af1c153ec6ea441fc40d190c53487cdb3"/><section>
+    <title>operator-=()</title>
+<indexterm><primary>operator-=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator-=</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator-= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs)</computeroutput></para><para>
+
+<para>Operator for substracting an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s value from the left <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>The number substracted from the current number</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                The value of rhs is substracted from current number and current number is returned. See also <link linkend="_classint23__t_1_1uint23__t_1a29171ddcce02e2a475bdb4c55dd75740">operator-()</link> </para>
 </section>
 <anchor xml:id="_classint23__t_1_1uint23__t_1a7bed1e2bcf9681811fd26f5517d191b5"/><section>
     <title>operator&lt;()</title>
@@ -363,6 +523,37 @@ Parameters</title>
                 </formalpara>
                 If two bitsets are same, function returns true. Else it finds the first location where bits differ, and returns false if left side integers that bit is 1, returns true otherwise </para>
 </section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a94b492ea873722c57de6997d17ead8f1"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool int23_t::uint23_t::operator== (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>Checks if two <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> are same. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>rhs</entry><entry>
+<para>Right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Individualy checks every bit and if a single is different returns false, else returns true. </para>
+</section>
 <anchor xml:id="_classint23__t_1_1uint23__t_1ac442c28cbb31416e651f2497d81102a5"/><section>
     <title>operator&gt;()</title>
 <indexterm><primary>operator&gt;</primary><secondary>int23_t::uint23_t</secondary></indexterm>
@@ -426,6 +617,38 @@ Parameters</title>
                     </para>
                 </formalpara>
                 If two bitsets are same, function returns true. Else it finds the first location where bits differ, and returns true if left side integers that bit is 1, returns false otherwise </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a5d83b3c00134b03455b3c6e823c3c120"/><section>
+    <title>operator&gt;&gt;()</title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> int23_t::uint23_t::operator&gt;&gt; (int const &amp; rhs) const</computeroutput></para><para>
+
+<para>Right bitshift operator, same thing as dividing by 2 n times. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>The number of times <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s bits are shifted. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>
