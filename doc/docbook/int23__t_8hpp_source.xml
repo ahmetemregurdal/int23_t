@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_int23__t_8hpp_source" xml:lang="en-US">
+<title>int23_t.hpp</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&lt;bitset&gt;</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;type_traits&gt;</emphasis>
+12 <emphasis role="keyword">namespace&#32;</emphasis>int23_t&#32;{
+20 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_int23__t_8hpp_1af5ade1fac67088c662c08a88e2358ae6">fullAdder</link>(<emphasis role="keywordtype">char</emphasis>&#32;<emphasis role="keyword">const</emphasis>&amp;b1,&#32;<emphasis role="keywordtype">char</emphasis>&#32;<emphasis role="keyword">const</emphasis>&amp;b2,&#32;<emphasis role="keywordtype">char</emphasis>&amp;carry);
+28 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_int23__t_8hpp_1a4db13892bc7f11d6698b6bb72bf73a1f">fullSub</link>(<emphasis role="keywordtype">char</emphasis>&#32;<emphasis role="keyword">const</emphasis>&amp;b1,&#32;<emphasis role="keywordtype">char</emphasis>&#32;<emphasis role="keyword">const</emphasis>&amp;b2,&#32;<emphasis role="keywordtype">char</emphasis>&amp;borrow);
+30 &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;{
+31 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::bitset&lt;23&gt;&#32;num;&#32;
+33 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t_1ad51b39b609bbf0795b2f4e71c010ac66">operator&lt;=</link>(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t_1a7bed1e2bcf9681811fd26f5517d191b5">operator&lt;</link>(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t_1a94661cc5c91f6166324a04b924ae8384">operator&gt;=</link>(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t_1ac442c28cbb31416e651f2497d81102a5">operator&gt;</link>(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator+(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator-(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator*(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;template&#32;&lt;typename&#32;T,&#32;typename&#32;std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value,&#32;<emphasis role="keywordtype">int</emphasis>&gt;::type&#32;=&#32;0&gt;
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>(T&#32;<emphasis role="keyword">const</emphasis>&amp;a);
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;template&#32;&lt;typename&#32;T,&#32;typename&#32;std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value,&#32;<emphasis role="keywordtype">int</emphasis>&gt;::type&#32;=&#32;0&gt;
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">operator</emphasis>&#32;T()&#32;<emphasis role="keyword">const</emphasis>;
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>();
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator&lt;&lt;(<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator&gt;&gt;(<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator+=(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs);
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator-=(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs);
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator*=(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs);
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator/=(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs);
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator%=(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs);
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator++();
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator--();
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator++(<emphasis role="keywordtype">int</emphasis>);
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator--(<emphasis role="keywordtype">int</emphasis>);
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;operator==(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator/(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator%(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator&gt;&gt;=(<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs);
+89 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator&lt;&lt;=(<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs);
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator&amp;(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator|(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;operator^(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator&amp;=(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs);
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator|=(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs);
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;operator^=(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;rhs);
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">operator</emphasis>&#32;std::string()&#32;<emphasis role="keyword">const</emphasis>;
+97 &#32;&#32;&#32;&#32;};
+98 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<link linkend="_int23__t_8hpp_1a97213726943c4e3c6a9143c106e45b1b">UINT23_MAX</link>(8388607);&#32;
+99 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<link linkend="_int23__t_8hpp_1a394f88afbad92f3475abf5beb64a0315">UINT23_MIN</link>(0);&#32;
+100 &#32;&#32;&#32;&#32;std::ostream&amp;&#32;operator&lt;&lt;&#32;(std::ostream&amp;out,&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;num);
+101 &#32;&#32;&#32;&#32;std::istream&amp;&#32;operator&gt;&gt;&#32;(std::istream&amp;in,&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;num);
+102 }
+</programlisting></section>

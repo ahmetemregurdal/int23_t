@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classint23__t_1_1uint23__t" xml:lang="en-US">
+<title>int23_t::uint23_t Class Reference</title>
+<indexterm><primary>int23_t::uint23_t</primary></indexterm>
+<para>
+
+<para>Unsigned 23 bit integer. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;int23_t.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classint23__t_1_1uint23__t_1ad51b39b609bbf0795b2f4e71c010ac66">operator&lt;=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>An operator to find if left side is smaller or equal to right side. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classint23__t_1_1uint23__t_1a7bed1e2bcf9681811fd26f5517d191b5">operator&lt;</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>An operator to find if left side is smaller than right side. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classint23__t_1_1uint23__t_1a94661cc5c91f6166324a04b924ae8384">operator&gt;=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>An operator to find if left side is greater or equal to right side. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classint23__t_1_1uint23__t_1ac442c28cbb31416e651f2497d81102a5">operator&gt;</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>An operator to find if left side is greater than right side. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1ad0f2f7227ac42fa8900e2491a0ee8cdc"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator+</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a29171ddcce02e2a475bdb4c55dd75740"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator-</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a2b9ff8feeef2f153718423610c9d81d2"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator*</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a0a2e9e09ac61bdcfcc252734effa9e17"/>template&lt;typename T , typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value, int &gt;::type  = 0&gt; </para><para><emphasis role="strong">uint23_t</emphasis> (T const &amp;a)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1aade22632e8d42b86f999a3cd0bc5946d"/>template&lt;typename T , typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value, int &gt;::type  = 0&gt; </para><para><emphasis role="strong">operator T</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a70af7156a939eb8ba7de4f04e07187e7"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator&lt;&lt;</emphasis> (int const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a5d83b3c00134b03455b3c6e823c3c120"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator&gt;&gt;</emphasis> (int const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a481b231de5db4cc6b54906f05018a75a"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator+=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1af1c153ec6ea441fc40d190c53487cdb3"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator-=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a9a070fe5e8d807630d67f3b9a4249b66"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator*=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1acbcad2bdabd875ead20f69d4a5209a6f"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator/=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1aab9faa266b1f45f65a2fa2da63d328d9"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator%=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1af5f2c04bfc4ccb9e8ceadad4ac03a483"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator++</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a70574f4759c7087d4597bbd8141a0023"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator--</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a18eabad81a1159f123ce93ce3f22e26d"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator++</emphasis> (int)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1aec0919e3cc5a7d86b47f3f9e3e1ee922"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator--</emphasis> (int)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a94b492ea873722c57de6997d17ead8f1"/>bool <emphasis role="strong">operator==</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1af9a23f0211cd1107804f070cdd481736"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator/</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1ad5adcae8522f4fef04c09a0d1760d181"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator%</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1ae1a8539d12895acf600fa221435da6bf"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator&gt;&gt;=</emphasis> (int const &amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a67f0b07bdfc9485c280534f28f48aa13"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator&lt;&lt;=</emphasis> (int const &amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1aea39812100e815d12dd3bc451f922267"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator&amp;</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a7f2560da22c4e3a16d4bce9a8db0e505"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator|</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1accc256271e9a9f7702f9f76df8a37426"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator^</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1aad69ac608385c5f712a8e62285c10341"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator&amp;=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a6c478d390206801b05191f3e653de860"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator|=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1ab05535887b8a002615de9ce1151ef89c"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator^=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a5d7f1c5e33015c45ed7c13871e8c23e4"/><emphasis role="strong">operator std::string</emphasis> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Unsigned 23 bit integer. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a7bed1e2bcf9681811fd26f5517d191b5"/><section>
+    <title>operator&lt;()</title>
+<indexterm><primary>operator&lt;</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator&lt;</secondary></indexterm>
+<para><computeroutput>bool int23_t::uint23_t::operator&lt; (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>An operator to find if left side is smaller than right side. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side integer</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                If two bitsets are same, function returns false. Else it finds the first location where bits differ, and returns false if left side integers that bit is 1, returns false true </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1ad51b39b609bbf0795b2f4e71c010ac66"/><section>
+    <title>operator&lt;=()</title>
+<indexterm><primary>operator&lt;=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator&lt;=</secondary></indexterm>
+<para><computeroutput>bool int23_t::uint23_t::operator&lt;= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>An operator to find if left side is smaller or equal to right side. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side integer</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                If two bitsets are same, function returns true. Else it finds the first location where bits differ, and returns false if left side integers that bit is 1, returns true otherwise </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1ac442c28cbb31416e651f2497d81102a5"/><section>
+    <title>operator&gt;()</title>
+<indexterm><primary>operator&gt;</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator&gt;</secondary></indexterm>
+<para><computeroutput>bool int23_t::uint23_t::operator&gt; (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>An operator to find if left side is greater than right side. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side integer</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                If two bitsets are same, function returns false. Else it finds the first location where bits differ, and returns true if left side integers that bit is 1, returns false otherwise </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a94661cc5c91f6166324a04b924ae8384"/><section>
+    <title>operator&gt;=()</title>
+<indexterm><primary>operator&gt;=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator&gt;=</secondary></indexterm>
+<para><computeroutput>bool int23_t::uint23_t::operator&gt;= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>An operator to find if left side is greater or equal to right side. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side integer</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                If two bitsets are same, function returns true. Else it finds the first location where bits differ, and returns true if left side integers that bit is 1, returns false otherwise </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+<link linkend="_int23__t_8hpp">int23_t.hpp</link>int23_t.cpp</section>
+</section>

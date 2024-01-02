@@ -1,0 +1,100 @@
+.TH "int23_t.hpp" 3 "INT23_t" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+int23_t.hpp \- Main header file for int23_t library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <bitset>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <type_traits>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBint23_t::uint23_t\fP"
+.br
+.RI "Unsigned 23 bit integer\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char \fBint23_t::fullAdder\fP (char const &b1, char const &b2, char &carry)"
+.br
+.RI "An adder which adds carry and 2 bits together and calculates new carry and sum\&. "
+.ti -1c
+.RI "char \fBint23_t::fullSub\fP (char const &b1, char const &b2, char &borrow)"
+.br
+.RI "A substractor function, similar to the adder function\&. Substracts left side from right side\&. "
+.ti -1c
+.RI "std::ostream & \fBint23_t::operator<<\fP (std::ostream &out, \fBuint23_t\fP const &num)"
+.br
+.ti -1c
+.RI "std::istream & \fBint23_t::operator>>\fP (std::istream &in, \fBuint23_t\fP &num)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBuint23_t\fP \fBint23_t::UINT23_MAX\fP (8388607)"
+.br
+.ti -1c
+.RI "const \fBuint23_t\fP \fBint23_t::UINT23_MIN\fP (0)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main header file for int23_t library\&. 
+
+Contiains Functions required to make uint23_t work 
+.SH "Function Documentation"
+.PP 
+.SS "char int23_t::fullAdder (char const & b1, char const & b2, char & carry)"
+
+.PP
+An adder which adds carry and 2 bits together and calculates new carry and sum\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIb1\fP Bit 1, left side of addition 
+.br
+\fIb2\fP Bit 2, right side of addition 
+.br
+\fIcarry\fP Carry of the addition, passes the reference and updates it with the new carry 
+.RE
+.PP
+
+.SS "char int23_t::fullSub (char const & b1, char const & b2, char & borrow)"
+
+.PP
+A substractor function, similar to the adder function\&. Substracts left side from right side\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIb1\fP Bit 1, left side of substraction 
+.br
+\fIb2\fP Bit 2, right side of substraction 
+.br
+\fIborrow\fP Borrow of the addition, passes the reference and updates it with new borrow 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const uint23_t int23_t::UINT23_MAX(8388607) (8388607)"
+The maximum value of integers of class uint23_t 
+.SS "const uint23_t int23_t::UINT23_MIN(0) (0)"
+The minimum value of integers of class uint23_t, 0 because it is unsigned 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for INT23_t from the source code\&.

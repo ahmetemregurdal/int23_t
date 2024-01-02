@@ -1,0 +1,168 @@
+.TH "int23_t::uint23_t" 3 "INT23_t" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+int23_t::uint23_t \- Unsigned 23 bit integer\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <int23_t\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBoperator<=\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.RI "An operator to find if left side is smaller or equal to right side\&. "
+.ti -1c
+.RI "bool \fBoperator<\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.RI "An operator to find if left side is smaller than right side\&. "
+.ti -1c
+.RI "bool \fBoperator>=\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.RI "An operator to find if left side is greater or equal to right side\&. "
+.ti -1c
+.RI "bool \fBoperator>\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.RI "An operator to find if left side is greater than right side\&. "
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator+\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator\-\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator*\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.ti -1c
+.RI "template<typename T , typename std::enable_if< std::is_arithmetic< T >::value, int >::type  = 0> \fBuint23_t\fP (T const &a)"
+.br
+.ti -1c
+.RI "template<typename T , typename std::enable_if< std::is_arithmetic< T >::value, int >::type  = 0> \fBoperator T\fP () const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator<<\fP (int const &rhs) const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator>>\fP (int const &rhs) const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator+=\fP (\fBuint23_t\fP const &rhs)"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator\-=\fP (\fBuint23_t\fP const &rhs)"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator*=\fP (\fBuint23_t\fP const &rhs)"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator/=\fP (\fBuint23_t\fP const &rhs)"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator%=\fP (\fBuint23_t\fP const &rhs)"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator++\fP ()"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator\-\-\fP ()"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator++\fP (int)"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator\-\-\fP (int)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator/\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator%\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator>>=\fP (int const &rhs)"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator<<=\fP (int const &rhs)"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator&\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator|\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP \fBoperator^\fP (\fBuint23_t\fP const &rhs) const"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator&=\fP (\fBuint23_t\fP const &rhs)"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator|=\fP (\fBuint23_t\fP const &rhs)"
+.br
+.ti -1c
+.RI "\fBuint23_t\fP & \fBoperator^=\fP (\fBuint23_t\fP const &rhs)"
+.br
+.ti -1c
+.RI "\fBoperator std::string\fP () const"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Unsigned 23 bit integer\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool int23_t::uint23_t::operator< (\fBuint23_t\fP const & rhs) const"
+
+.PP
+An operator to find if left side is smaller than right side\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side integer
+.RE
+.PP
+If two bitsets are same, function returns false\&. Else it finds the first location where bits differ, and returns false if left side integers that bit is 1, returns false true 
+.SS "bool int23_t::uint23_t::operator<= (\fBuint23_t\fP const & rhs) const"
+
+.PP
+An operator to find if left side is smaller or equal to right side\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side integer
+.RE
+.PP
+If two bitsets are same, function returns true\&. Else it finds the first location where bits differ, and returns false if left side integers that bit is 1, returns true otherwise 
+.SS "bool int23_t::uint23_t::operator> (\fBuint23_t\fP const & rhs) const"
+
+.PP
+An operator to find if left side is greater than right side\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side integer
+.RE
+.PP
+If two bitsets are same, function returns false\&. Else it finds the first location where bits differ, and returns true if left side integers that bit is 1, returns false otherwise 
+.SS "bool int23_t::uint23_t::operator>= (\fBuint23_t\fP const & rhs) const"
+
+.PP
+An operator to find if left side is greater or equal to right side\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side integer
+.RE
+.PP
+If two bitsets are same, function returns true\&. Else it finds the first location where bits differ, and returns true if left side integers that bit is 1, returns false otherwise 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for INT23_t from the source code\&.

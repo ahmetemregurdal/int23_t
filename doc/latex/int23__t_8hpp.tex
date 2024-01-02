@@ -1,0 +1,98 @@
+\doxysection{int23\+\_\+t.\+hpp File Reference}
+\hypertarget{int23__t_8hpp}{}\label{int23__t_8hpp}\index{int23\_t.hpp@{int23\_t.hpp}}
+
+
+Main header file for int23\+\_\+t library.  
+
+
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classint23__t_1_1uint23__t}{int23\+\_\+t\+::uint23\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Unsigned 23 bit integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{int23__t_8hpp_af5ade1fac67088c662c08a88e2358ae6}{int23\+\_\+t\+::full\+Adder}} (char const \&b1, char const \&b2, char \&carry)
+\begin{DoxyCompactList}\small\item\em An adder which adds carry and 2 bits together and calculates new carry and sum. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{int23__t_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f}{int23\+\_\+t\+::full\+Sub}} (char const \&b1, char const \&b2, char \&borrow)
+\begin{DoxyCompactList}\small\item\em A substractor function, similar to the adder function. Substracts left side from right side. \end{DoxyCompactList}\item 
+\Hypertarget{int23__t_8hpp_a1914e870f88b2b77ef011daaab58f499}\label{int23__t_8hpp_a1914e870f88b2b77ef011daaab58f499} 
+std\+::ostream \& {\bfseries int23\+\_\+t\+::operator$<$$<$} (std\+::ostream \&out, \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} const \&num)
+\item 
+\Hypertarget{int23__t_8hpp_aebe3191c1e0c8e2c74e9c90b6d5e56b6}\label{int23__t_8hpp_aebe3191c1e0c8e2c74e9c90b6d5e56b6} 
+std\+::istream \& {\bfseries int23\+\_\+t\+::operator$>$$>$} (std\+::istream \&in, \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \&num)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \mbox{\hyperlink{int23__t_8hpp_a97213726943c4e3c6a9143c106e45b1b}{int23\+\_\+t\+::\+UINT23\+\_\+\+MAX}} (8388607)
+\item 
+const \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \mbox{\hyperlink{int23__t_8hpp_a394f88afbad92f3475abf5beb64a0315}{int23\+\_\+t\+::\+UINT23\+\_\+\+MIN}} (0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main header file for int23\+\_\+t library. 
+
+Contiains Functions required to make uint23\+\_\+t work 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{int23__t_8hpp_af5ade1fac67088c662c08a88e2358ae6}\label{int23__t_8hpp_af5ade1fac67088c662c08a88e2358ae6} 
+\index{int23\_t.hpp@{int23\_t.hpp}!fullAdder@{fullAdder}}
+\index{fullAdder@{fullAdder}!int23\_t.hpp@{int23\_t.hpp}}
+\doxysubsubsection{\texorpdfstring{fullAdder()}{fullAdder()}}
+{\footnotesize\ttfamily char int23\+\_\+t\+::full\+Adder (\begin{DoxyParamCaption}\item[{char const \&}]{b1,  }\item[{char const \&}]{b2,  }\item[{char \&}]{carry }\end{DoxyParamCaption})}
+
+
+
+An adder which adds carry and 2 bits together and calculates new carry and sum. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b1} & Bit 1, left side of addition \\
+\hline
+\mbox{\texttt{ in}}  & {\em b2} & Bit 2, right side of addition \\
+\hline
+\mbox{\texttt{ in}}  & {\em carry} & Carry of the addition, passes the reference and updates it with the new carry \\
+\hline
+\end{DoxyParams}
+\Hypertarget{int23__t_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f}\label{int23__t_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f} 
+\index{int23\_t.hpp@{int23\_t.hpp}!fullSub@{fullSub}}
+\index{fullSub@{fullSub}!int23\_t.hpp@{int23\_t.hpp}}
+\doxysubsubsection{\texorpdfstring{fullSub()}{fullSub()}}
+{\footnotesize\ttfamily char int23\+\_\+t\+::full\+Sub (\begin{DoxyParamCaption}\item[{char const \&}]{b1,  }\item[{char const \&}]{b2,  }\item[{char \&}]{borrow }\end{DoxyParamCaption})}
+
+
+
+A substractor function, similar to the adder function. Substracts left side from right side. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b1} & Bit 1, left side of substraction \\
+\hline
+\mbox{\texttt{ in}}  & {\em b2} & Bit 2, right side of substraction \\
+\hline
+\mbox{\texttt{ in}}  & {\em borrow} & Borrow of the addition, passes the reference and updates it with new borrow \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{int23__t_8hpp_a97213726943c4e3c6a9143c106e45b1b}\label{int23__t_8hpp_a97213726943c4e3c6a9143c106e45b1b} 
+\index{int23\_t.hpp@{int23\_t.hpp}!UINT23\_MAX@{UINT23\_MAX}}
+\index{UINT23\_MAX@{UINT23\_MAX}!int23\_t.hpp@{int23\_t.hpp}}
+\doxysubsubsection{\texorpdfstring{UINT23\_MAX}{UINT23\_MAX}}
+{\footnotesize\ttfamily const uint23\+\_\+t int23\+\_\+t\+::\+UINT23\+\_\+\+MAX(8388607) (\begin{DoxyParamCaption}\item[{8388607}]{ }\end{DoxyParamCaption})}
+
+The maximum value of integers of class uint23\+\_\+t \Hypertarget{int23__t_8hpp_a394f88afbad92f3475abf5beb64a0315}\label{int23__t_8hpp_a394f88afbad92f3475abf5beb64a0315} 
+\index{int23\_t.hpp@{int23\_t.hpp}!UINT23\_MIN@{UINT23\_MIN}}
+\index{UINT23\_MIN@{UINT23\_MIN}!int23\_t.hpp@{int23\_t.hpp}}
+\doxysubsubsection{\texorpdfstring{UINT23\_MIN}{UINT23\_MIN}}
+{\footnotesize\ttfamily const uint23\+\_\+t int23\+\_\+t\+::\+UINT23\+\_\+\+MIN(0) (\begin{DoxyParamCaption}\item[{0}]{ }\end{DoxyParamCaption})}
+
+The minimum value of integers of class uint23\+\_\+t, 0 because it is unsigned 
