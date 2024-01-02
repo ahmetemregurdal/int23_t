@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_int23__t_8cpp" xml:lang="en-US">
+<title>int23_t.cpp File Reference</title>
+<indexterm><primary>int23_t.cpp</primary></indexterm>
+<para>
+
+<para>Main implementation file of int23_t library. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;algorithm&gt;<?linebreak?>#include &lt;bitset&gt;<?linebreak?>#include &lt;stdexcept&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;type_traits&gt;<?linebreak?>#include &quot;int23_t.hpp&quot;<?linebreak?></programlisting><section>
+<title>Detailed Description</title>
+
+<para>Main implementation file of int23_t library. </para>
+
+<para>Contains implementation of functions required to make int23_t work </para>
+</section>
+</section>

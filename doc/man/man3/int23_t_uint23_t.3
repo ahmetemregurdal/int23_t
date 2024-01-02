@@ -15,37 +15,47 @@ int23_t::uint23_t \- Unsigned 23 bit integer\&.
 .ti -1c
 .RI "bool \fBoperator<=\fP (\fBuint23_t\fP const &rhs) const"
 .br
-.RI "An operator to find if left side is smaller or equal to right side\&. "
+.RI "An operator to find if left \fBuint23_t\fP is smaller or equal to right \fBuint23_t\fP\&. "
 .ti -1c
 .RI "bool \fBoperator<\fP (\fBuint23_t\fP const &rhs) const"
 .br
-.RI "An operator to find if left side is smaller than right side\&. "
+.RI "An operator to find if left \fBuint23_t\fP is smaller than right \fBuint23_t\fP\&. "
 .ti -1c
 .RI "bool \fBoperator>=\fP (\fBuint23_t\fP const &rhs) const"
 .br
-.RI "An operator to find if left side is greater or equal to right side\&. "
+.RI "An operator to find if left \fBuint23_t\fP is greater or equal to right \fBuint23_t\fP\&. "
 .ti -1c
 .RI "bool \fBoperator>\fP (\fBuint23_t\fP const &rhs) const"
 .br
-.RI "An operator to find if left side is greater than right side\&. "
+.RI "An operator to find if left \fBuint23_t\fP is greater than right \fBuint23_t\fP\&. "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator+\fP (\fBuint23_t\fP const &rhs) const"
 .br
+.RI "An operator to add two \fBuint23_t\fP's together\&. "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator\-\fP (\fBuint23_t\fP const &rhs) const"
 .br
+.RI "An operator to substract an \fBuint23_t\fP from another\&. "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator*\fP (\fBuint23_t\fP const &rhs) const"
 .br
+.RI "An operator to multiply an \fBuint23_t\fP with another\&. "
 .ti -1c
 .RI "template<typename T , typename std::enable_if< std::is_arithmetic< T >::value, int >::type  = 0> \fBuint23_t\fP (T const &a)"
 .br
+.RI "A constructor to create \fBuint23_t\fP from classes that can easily be represented as binary\&. "
 .ti -1c
 .RI "template<typename T , typename std::enable_if< std::is_arithmetic< T >::value, int >::type  = 0> \fBoperator T\fP () const"
 .br
+.RI "An operator for converting \fBuint23_t\fP to arithmetic types\&. see also https://en.cppreference.com/w/c/language/arithmetic_types\&. "
+.ti -1c
+.RI "\fBuint23_t\fP ()"
+.br
+.RI "Default constructor for \fBuint23_t\fP, sets the value to 0\&. "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator<<\fP (int const &rhs) const"
 .br
+.RI "Left bitshift operator, same thing as multiplying by 2 n times\&. "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator>>\fP (int const &rhs) const"
 .br
@@ -116,49 +126,119 @@ int23_t::uint23_t \- Unsigned 23 bit integer\&.
 .SH "Detailed Description"
 .PP 
 Unsigned 23 bit integer\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename T , typename std::enable_if< std::is_arithmetic< T >::value, int >::type > int23_t::uint23_t::uint23_t (T const & a)"
+
+.PP
+A constructor to create \fBuint23_t\fP from classes that can easily be represented as binary\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIa\fP the value of \fBuint23_t\fP that is being constructed\&. Has to be an arithmetic type like int or char, see also https://en.cppreference.com/w/c/language/arithmetic_types
+.RE
+.PP
+Constructs \fBuint23_t\fP using std::bitset's constructor, see also https://en.cppreference.com/w/cpp/utility/bitset/bitset 
+.SS "int23_t::uint23_t::uint23_t ()"
+
+.PP
+Default constructor for \fBuint23_t\fP, sets the value to 0\&. Does the same thing as \fBuint23_t(T const& 0)\fP 
 .SH "Member Function Documentation"
 .PP 
+.SS "template<typename T , typename std::enable_if< std::is_arithmetic< T >::value, int >::type > int23_t::uint23_t::operator T () const"
+
+.PP
+An operator for converting \fBuint23_t\fP to arithmetic types\&. see also https://en.cppreference.com/w/c/language/arithmetic_types\&. Uses std::bitset::to_ulong function\&. See also https://en.cppreference.com/w/cpp/utility/bitset/to_ulong 
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator* (\fBuint23_t\fP const & rhs) const"
+
+.PP
+An operator to multiply an \fBuint23_t\fP with another\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBint23_t\&.cpp\fP 
+.RE
+.PP
+
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator+ (\fBuint23_t\fP const & rhs) const"
+
+.PP
+An operator to add two \fBuint23_t\fP's together\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
+.RE
+.PP
+Uses \fBfullAdder()\fP function to calculate sum of two \fBuint23_t\fP's 
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator\- (\fBuint23_t\fP const & rhs) const"
+
+.PP
+An operator to substract an \fBuint23_t\fP from another\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
+.RE
+.PP
+Uses \fBfullSub()\fP function to calculate difference of two \fBuint23_t\fP's 
 .SS "bool int23_t::uint23_t::operator< (\fBuint23_t\fP const & rhs) const"
 
 .PP
-An operator to find if left side is smaller than right side\&. 
+An operator to find if left \fBuint23_t\fP is smaller than right \fBuint23_t\fP\&. 
 .PP
 \fBParameters\fP
 .RS 4
-\fIrhs\fP Right hand side integer
+\fIrhs\fP Right hand side \fBuint23_t\fP
 .RE
 .PP
 If two bitsets are same, function returns false\&. Else it finds the first location where bits differ, and returns false if left side integers that bit is 1, returns false true 
-.SS "bool int23_t::uint23_t::operator<= (\fBuint23_t\fP const & rhs) const"
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator<< (int const & rhs) const"
 
 .PP
-An operator to find if left side is smaller or equal to right side\&. 
+Left bitshift operator, same thing as multiplying by 2 n times\&. 
 .PP
 \fBParameters\fP
 .RS 4
-\fIrhs\fP Right hand side integer
+\fIrhs\fP The number of times \fBuint23_t\fP's bits are shifted\&.
+.RE
+.PP
+Uses std::bitset::operator<< internally, see also https://en.cppreference.com/w/cpp/utility/bitset/operator_ltltgtgt 
+.SS "bool int23_t::uint23_t::operator<= (\fBuint23_t\fP const & rhs) const"
+
+.PP
+An operator to find if left \fBuint23_t\fP is smaller or equal to right \fBuint23_t\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
 .RE
 .PP
 If two bitsets are same, function returns true\&. Else it finds the first location where bits differ, and returns false if left side integers that bit is 1, returns true otherwise 
 .SS "bool int23_t::uint23_t::operator> (\fBuint23_t\fP const & rhs) const"
 
 .PP
-An operator to find if left side is greater than right side\&. 
+An operator to find if left \fBuint23_t\fP is greater than right \fBuint23_t\fP\&. 
 .PP
 \fBParameters\fP
 .RS 4
-\fIrhs\fP Right hand side integer
+\fIrhs\fP Right hand side \fBuint23_t\fP
 .RE
 .PP
 If two bitsets are same, function returns false\&. Else it finds the first location where bits differ, and returns true if left side integers that bit is 1, returns false otherwise 
 .SS "bool int23_t::uint23_t::operator>= (\fBuint23_t\fP const & rhs) const"
 
 .PP
-An operator to find if left side is greater or equal to right side\&. 
+An operator to find if left \fBuint23_t\fP is greater or equal to right \fBuint23_t\fP\&. 
 .PP
 \fBParameters\fP
 .RS 4
-\fIrhs\fP Right hand side integer
+\fIrhs\fP Right hand side \fBuint23_t\fP
 .RE
 .PP
 If two bitsets are same, function returns true\&. Else it finds the first location where bits differ, and returns true if left side integers that bit is 1, returns false otherwise 
