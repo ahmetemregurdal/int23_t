@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/nix/store/4vq5ggsg1vmfs09r4sqbidmgvqlxrv14-cmake-3.27.8/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/nix/store/4vq5ggsg1vmfs09r4sqbidmgvqlxrv14-cmake-3.27.8/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/nix/store/4vq5ggsg1vmfs09r4sqbidmgvqlxrv14-cmake-3.27.8/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/nix/store/4vq5ggsg1vmfs09r4sqbidmgvqlxrv14-cmake-3.27.8/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/nix/store/4vq5ggsg1vmfs09r4sqbidmgvqlxrv14-cmake-3.27.8/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/nix/store/4vq5ggsg1vmfs09r4sqbidmgvqlxrv14-cmake-3.27.8/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aeg/Documents/git/int23_t/CMakeFiles /home/aeg/Documents/git/int23_t//CMakeFiles/progress.marks
@@ -116,6 +161,43 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named int23_t
+
+# Build rule for target.
+int23_t: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 int23_t
+.PHONY : int23_t
+
+# fast build rule for target.
+int23_t/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int23_t.dir/build.make CMakeFiles/int23_t.dir/build
+.PHONY : int23_t/fast
+
+src/uint23_t.o: src/uint23_t.cpp.o
+.PHONY : src/uint23_t.o
+
+# target to build an object file
+src/uint23_t.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int23_t.dir/build.make CMakeFiles/int23_t.dir/src/uint23_t.cpp.o
+.PHONY : src/uint23_t.cpp.o
+
+src/uint23_t.i: src/uint23_t.cpp.i
+.PHONY : src/uint23_t.i
+
+# target to preprocess a source file
+src/uint23_t.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int23_t.dir/build.make CMakeFiles/int23_t.dir/src/uint23_t.cpp.i
+.PHONY : src/uint23_t.cpp.i
+
+src/uint23_t.s: src/uint23_t.cpp.s
+.PHONY : src/uint23_t.s
+
+# target to generate assembly for a file
+src/uint23_t.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int23_t.dir/build.make CMakeFiles/int23_t.dir/src/uint23_t.cpp.s
+.PHONY : src/uint23_t.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -123,7 +205,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... int23_t"
+	@echo "... src/uint23_t.o"
+	@echo "... src/uint23_t.i"
+	@echo "... src/uint23_t.s"
 .PHONY : help
 
 

@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_library(int23_t SHARED
 	src/uint23_t.cpp
 )
-set_target_properties(int23_t PROPERTIES VERSION ${PROJECT_VERSION}))
+set_target_properties(int23_t PROPERTIES VERSION ${PROJECT_VERSION})
 set_target_properties(int23_t PROPERTIES PUBLIC_HEADER include/uint23_t.hpp)
 include(GNUInstallDirs)
 install(TARGETS int23_t

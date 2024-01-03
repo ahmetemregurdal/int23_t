@@ -122,6 +122,11 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/nix/store/4vq5ggsg1vmfs09r4sqbidmgvqlxrv14-cmake-3.27.8/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/4vq5ggsg1vmfs09r4sqbidmgvqlxrv14-cmake-3.27.8/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

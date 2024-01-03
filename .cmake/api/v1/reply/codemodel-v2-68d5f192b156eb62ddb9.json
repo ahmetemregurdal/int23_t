@@ -6,13 +6,18 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0f3e80f99c68838c05ad.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
 					},
 					"projectIndex" : 0,
-					"source" : "."
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
 			"name" : "",
@@ -23,10 +28,23 @@
 					[
 						0
 					],
-					"name" : "int23_t"
+					"name" : "int23_t",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
-			"targets" : []
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "int23_t::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-int23_t-22661cbe5f0190c8ba52.json",
+					"name" : "int23_t",
+					"projectIndex" : 0
+				}
+			]
 		}
 	],
 	"kind" : "codemodel",
