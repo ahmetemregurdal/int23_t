@@ -75,9 +75,11 @@ int23_t::uint23_t \- Unsigned 23 bit integer\&.
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator/=\fP (\fBuint23_t\fP const &rhs)"
 .br
+.RI "Operator for dividing an \fBuint23_t\fP with the right hand side \fBuint23_t\fP\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator%=\fP (\fBuint23_t\fP const &rhs)"
 .br
+.RI "Operator for modulo-ing the current number in module rhs\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator++\fP ()"
 .br
@@ -101,37 +103,47 @@ int23_t::uint23_t \- Unsigned 23 bit integer\&.
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator/\fP (\fBuint23_t\fP const &rhs) const"
 .br
+.RI "Operator for dividing an \fBuint23_t\fP with another\&. "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator%\fP (\fBuint23_t\fP const &rhs) const"
 .br
+.RI "Operator for modulo-ing an \fBuint23_t\fP modulo another \fBuint23_t\fP\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator>>=\fP (int const &rhs)"
 .br
+.RI "Operator for shifting current \fBuint23_t\fP's internal bitset\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator<<=\fP (int const &rhs)"
 .br
+.RI "Operator for shifting current \fBuint23_t\fP's internal bitset\&. "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator&\fP (\fBuint23_t\fP const &rhs) const"
 .br
+.RI "Bitwise and operator\&. "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator|\fP (\fBuint23_t\fP const &rhs) const"
 .br
+.RI "Bitwise or operator\&. "
 .ti -1c
 .RI "\fBuint23_t\fP \fBoperator^\fP (\fBuint23_t\fP const &rhs) const"
 .br
+.RI "Bitwise xor operator\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator&=\fP (\fBuint23_t\fP const &rhs)"
 .br
+.RI "Bitwise operator for and-ing the current \fBuint23_t\fP\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator|=\fP (\fBuint23_t\fP const &rhs)"
 .br
+.RI "Bitwise operator for or-ing the current \fBuint23_t\fP\&. "
 .ti -1c
 .RI "\fBuint23_t\fP & \fBoperator^=\fP (\fBuint23_t\fP const &rhs)"
 .br
+.RI "Bitwise operator for xor-ing the current \fBuint23_t\fP\&. "
 .ti -1c
 .RI "\fBoperator std::string\fP () const"
 .br
-.RI "Converting \fBuint23_t\fP to string in base 10\&. "
+.RI "Converts \fBuint23_t\fP to string in base 10\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
@@ -159,6 +171,50 @@ Default constructor for \fBuint23_t\fP, sets the value to 0\&. Does the same thi
 
 .PP
 An operator for converting \fBuint23_t\fP to arithmetic types\&. see also https://en.cppreference.com/w/c/language/arithmetic_types\&. Uses std::bitset::to_ulong function\&. See also https://en.cppreference.com/w/cpp/utility/bitset/to_ulong 
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator% (\fBuint23_t\fP const & rhs) const"
+
+.PP
+Operator for modulo-ing an \fBuint23_t\fP modulo another \fBuint23_t\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP, the modulo
+.RE
+.PP
+Returns left \fBuint23_t\fP modulo right \fBuint23_t\fP 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator%= (\fBuint23_t\fP const & rhs)"
+
+.PP
+Operator for modulo-ing the current number in module rhs\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP The modulo that is currently being used\&.
+.RE
+.PP
+The value of current number is equalised to the modulo of that number in modulo rhs\&. See also \fBoperator%()\fP 
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator& (\fBuint23_t\fP const & rhs) const"
+
+.PP
+Bitwise and operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
+.RE
+.PP
+Uses std::bitset member function internally, see also https://en.cppreference.com/w/cpp/utility/bitset/operator_logic2 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator&= (\fBuint23_t\fP const & rhs)"
+
+.PP
+Bitwise operator for and-ing the current \fBuint23_t\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
+.RE
+.PP
+Sets the current uitn23_t's value to bitwise and of current and rhs's internal bitset\&. See also \fBoperator&()\fP 
 .SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator* (\fBuint23_t\fP const & rhs) const"
 
 .PP
@@ -246,6 +302,28 @@ Operator for substracting an \fBuint23_t\fP's value from the left \fBuint23_t\fP
 .RE
 .PP
 The value of rhs is substracted from current number and current number is returned\&. See also \fBoperator-()\fP 
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator/ (\fBuint23_t\fP const & rhs) const"
+
+.PP
+Operator for dividing an \fBuint23_t\fP with another\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
+.RE
+.PP
+Divides two \fBuint23_t\fP's and returns the value\&. 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator/= (\fBuint23_t\fP const & rhs)"
+
+.PP
+Operator for dividing an \fBuint23_t\fP with the right hand side \fBuint23_t\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP The number current number is multiplied by
+.RE
+.PP
+The value of current number is divided by rhs and then returned\&. See also \fBoperator/()\fP 
 .SS "bool int23_t::uint23_t::operator< (\fBuint23_t\fP const & rhs) const"
 
 .PP
@@ -268,6 +346,17 @@ Left bitshift operator, same thing as multiplying by 2 n times\&.
 .RE
 .PP
 Uses std::bitset::operator<< internally, see also https://en.cppreference.com/w/cpp/utility/bitset/operator_ltltgtgt 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator<<= (int const & rhs)"
+
+.PP
+Operator for shifting current \fBuint23_t\fP's internal bitset\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP The number of times bits are shifted
+.RE
+.PP
+Shifts the current \fBuint23_t\fP's bits, see also \fBoperator<<()\fP 
 .SS "bool int23_t::uint23_t::operator<= (\fBuint23_t\fP const & rhs) const"
 
 .PP
@@ -323,6 +412,61 @@ Right bitshift operator, same thing as dividing by 2 n times\&.
 .RE
 .PP
 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator>>= (int const & rhs)"
+
+.PP
+Operator for shifting current \fBuint23_t\fP's internal bitset\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP The number of times bits are shifted
+.RE
+.PP
+Shifts the current \fBuint23_t\fP's bits, see also \fBoperator>>()\fP 
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator^ (\fBuint23_t\fP const & rhs) const"
+
+.PP
+Bitwise xor operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
+.RE
+.PP
+Uses std::bitset member function internally, see also https://en.cppreference.com/w/cpp/utility/bitset/operator_logic2 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator^= (\fBuint23_t\fP const & rhs)"
+
+.PP
+Bitwise operator for xor-ing the current \fBuint23_t\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
+.RE
+.PP
+Sets the current uitn23_t's value to bitwise xor of current and rhs's internal bitset\&. See also \fBoperator^()\fP 
+.SS "\fBint23_t::uint23_t\fP int23_t::uint23_t::operator| (\fBuint23_t\fP const & rhs) const"
+
+.PP
+Bitwise or operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
+.RE
+.PP
+Uses std::bitset member function internally, see also https://en.cppreference.com/w/cpp/utility/bitset/operator_logic2 
+.SS "\fBint23_t::uint23_t\fP & int23_t::uint23_t::operator|= (\fBuint23_t\fP const & rhs)"
+
+.PP
+Bitwise operator for or-ing the current \fBuint23_t\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBuint23_t\fP
+.RE
+.PP
+Sets the current uitn23_t's value to bitwise or of current and rhs's internal bitset\&. See also \fBoperator|()\fP 
 
 .SH "Author"
 .PP 

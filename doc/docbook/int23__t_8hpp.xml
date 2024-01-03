@@ -27,9 +27,13 @@
 
 <para>A substractor function, similar to the adder function. Substracts left side from right side. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_int23__t_8hpp_1a1914e870f88b2b77ef011daaab58f499"/>std::ostream &amp; <emphasis role="strong">int23_t::operator&lt;&lt;</emphasis> (std::ostream &amp;out, <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;num)</para>
+            <listitem><para>std::ostream &amp; <link linkend="_int23__t_8hpp_1a1914e870f88b2b77ef011daaab58f499">int23_t::operator&lt;&lt;</link> (std::ostream &amp;out, <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;num)</para>
+
+<para>Operator for outputting an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> using std::ostream class. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_int23__t_8hpp_1aebe3191c1e0c8e2c74e9c90b6d5e56b6"/>std::istream &amp; <emphasis role="strong">int23_t::operator&gt;&gt;</emphasis> (std::istream &amp;in, <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp;num)</para>
+            <listitem><para>std::istream &amp; <link linkend="_int23__t_8hpp_1aebe3191c1e0c8e2c74e9c90b6d5e56b6">int23_t::operator&gt;&gt;</link> (std::istream &amp;in, <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp;num)</para>
+
+<para>Operator for inputting an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> using std::istream class. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -134,6 +138,80 @@ Parameters</title>
                     </para>
                 </formalpara>
                 </para>
+</section>
+<anchor xml:id="_int23__t_8hpp_1a1914e870f88b2b77ef011daaab58f499"/><section>
+    <title>operator&lt;&lt;()</title>
+<indexterm><primary>operator&lt;&lt;</primary><secondary>int23_t.hpp</secondary></indexterm>
+<indexterm><primary>int23_t.hpp</primary><secondary>operator&lt;&lt;</secondary></indexterm>
+<para><computeroutput>std::ostream &amp; int23_t::operator&lt;&lt; (std::ostream &amp; out, <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; num)</computeroutput></para><para>
+
+<para>Operator for outputting an uint23_t using std::ostream class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>out</entry><entry>
+<para>Variable used for outputting, from std::ostream class like std::cout, see also <link xlink:href="https://en.cppreference.com/w/cpp/io/basic_ostream">https://en.cppreference.com/w/cpp/io/basic_ostream</link> </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>num</entry><entry>
+<para>Variable thats outputted, from uint23_t class</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Converts uint23_t to std::string to output integer </para>
+</section>
+<anchor xml:id="_int23__t_8hpp_1aebe3191c1e0c8e2c74e9c90b6d5e56b6"/><section>
+    <title>operator&gt;&gt;()</title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>int23_t.hpp</secondary></indexterm>
+<indexterm><primary>int23_t.hpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::istream &amp; int23_t::operator&gt;&gt; (std::istream &amp; in, <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; num)</computeroutput></para><para>
+
+<para>Operator for inputting an uint23_t using std::istream class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>in</entry><entry>
+<para>Variable used for inputting, from std::istream class like std::cin, see also <link xlink:href="https://en.cppreference.com/w/cpp/io/basic_istream">https://en.cppreference.com/w/cpp/io/basic_istream</link> </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>num</entry><entry>
+<para>Variable thats inputted, from uint23_t class</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Inputs int32_t and converts it to uint23_t internally </para>
 </section>
 </section>
 <section>

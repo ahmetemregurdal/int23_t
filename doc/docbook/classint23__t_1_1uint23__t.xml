@@ -73,9 +73,13 @@
 
 <para>Operator for multiplying an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> with the one in the right. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1acbcad2bdabd875ead20f69d4a5209a6f"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator/=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1acbcad2bdabd875ead20f69d4a5209a6f">operator/=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+
+<para>Operator for dividing an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> with the right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1aab9faa266b1f45f65a2fa2da63d328d9"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator%=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1aab9faa266b1f45f65a2fa2da63d328d9">operator%=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+
+<para>Operator for modulo-ing the current number in module rhs. </para>
 </listitem>
             <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1af5f2c04bfc4ccb9e8ceadad4ac03a483">operator++</link> ()</para>
 
@@ -97,29 +101,49 @@
 
 <para>Checks if two <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> are same. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1af9a23f0211cd1107804f070cdd481736"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator/</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <link linkend="_classint23__t_1_1uint23__t_1af9a23f0211cd1107804f070cdd481736">operator/</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>Operator for dividing an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> with another. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1ad5adcae8522f4fef04c09a0d1760d181"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator%</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <link linkend="_classint23__t_1_1uint23__t_1ad5adcae8522f4fef04c09a0d1760d181">operator%</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>Operator for modulo-ing an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> modulo another <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1ae1a8539d12895acf600fa221435da6bf"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator&gt;&gt;=</emphasis> (int const &amp;rhs)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1ae1a8539d12895acf600fa221435da6bf">operator&gt;&gt;=</link> (int const &amp;rhs)</para>
+
+<para>Operator for shifting current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s internal bitset. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a67f0b07bdfc9485c280534f28f48aa13"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator&lt;&lt;=</emphasis> (int const &amp;rhs)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1a67f0b07bdfc9485c280534f28f48aa13">operator&lt;&lt;=</link> (int const &amp;rhs)</para>
+
+<para>Operator for shifting current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s internal bitset. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1aea39812100e815d12dd3bc451f922267"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator&amp;</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <link linkend="_classint23__t_1_1uint23__t_1aea39812100e815d12dd3bc451f922267">operator&amp;</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>Bitwise and operator. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a7f2560da22c4e3a16d4bce9a8db0e505"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator|</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <link linkend="_classint23__t_1_1uint23__t_1a7f2560da22c4e3a16d4bce9a8db0e505">operator|</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>Bitwise or operator. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1accc256271e9a9f7702f9f76df8a37426"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator^</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <link linkend="_classint23__t_1_1uint23__t_1accc256271e9a9f7702f9f76df8a37426">operator^</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>Bitwise xor operator. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1aad69ac608385c5f712a8e62285c10341"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator&amp;=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1aad69ac608385c5f712a8e62285c10341">operator&amp;=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+
+<para>Bitwise operator for and-ing the current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a6c478d390206801b05191f3e653de860"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator|=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1a6c478d390206801b05191f3e653de860">operator|=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+
+<para>Bitwise operator for or-ing the current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1ab05535887b8a002615de9ce1151ef89c"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <emphasis role="strong">operator^=</emphasis> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+            <listitem><para><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> &amp; <link linkend="_classint23__t_1_1uint23__t_1ab05535887b8a002615de9ce1151ef89c">operator^=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs)</para>
+
+<para>Bitwise operator for xor-ing the current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
 </listitem>
             <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a5d7f1c5e33015c45ed7c13871e8c23e4"/><emphasis role="strong">operator std::string</emphasis> () const</para>
 
-<para>Converting <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> to string in base 10. </para>
+<para>Converts <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> to string in base 10. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -186,6 +210,134 @@ Parameters</title>
 </para>
 
 <para>Uses std::bitset::to_ulong function. See also <link xlink:href="https://en.cppreference.com/w/cpp/utility/bitset/to_ulong">https://en.cppreference.com/w/cpp/utility/bitset/to_ulong</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1ad5adcae8522f4fef04c09a0d1760d181"/><section>
+    <title>operator%()</title>
+<indexterm><primary>operator%</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator%</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> int23_t::uint23_t::operator% (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>Operator for modulo-ing an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> modulo another <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>, the modulo</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Returns left <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> modulo right <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1aab9faa266b1f45f65a2fa2da63d328d9"/><section>
+    <title>operator%=()</title>
+<indexterm><primary>operator%=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator%=</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator%= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs)</computeroutput></para><para>
+
+<para>Operator for modulo-ing the current number in module rhs. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>The modulo that is currently being used.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                The value of current number is equalised to the modulo of that number in modulo rhs. See also <link linkend="_classint23__t_1_1uint23__t_1ad5adcae8522f4fef04c09a0d1760d181">operator%()</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1aea39812100e815d12dd3bc451f922267"/><section>
+    <title>operator&amp;()</title>
+<indexterm><primary>operator&amp;</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator&amp;</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> int23_t::uint23_t::operator&amp; (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>Bitwise and operator. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Uses std::bitset member function internally, see also <link xlink:href="https://en.cppreference.com/w/cpp/utility/bitset/operator_logic2">https://en.cppreference.com/w/cpp/utility/bitset/operator_logic2</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1aad69ac608385c5f712a8e62285c10341"/><section>
+    <title>operator&amp;=()</title>
+<indexterm><primary>operator&amp;=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator&amp;=</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator&amp;= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs)</computeroutput></para><para>
+
+<para>Bitwise operator for and-ing the current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Sets the current uitn23_t&apos;s value to bitwise and of current and rhs&apos;s internal bitset. See also <link linkend="_classint23__t_1_1uint23__t_1aea39812100e815d12dd3bc451f922267">operator&amp;()</link> </para>
 </section>
 <anchor xml:id="_classint23__t_1_1uint23__t_1a2b9ff8feeef2f153718423610c9d81d2"/><section>
     <title>operator*()</title>
@@ -427,6 +579,70 @@ Parameters</title>
                 </formalpara>
                 The value of rhs is substracted from current number and current number is returned. See also <link linkend="_classint23__t_1_1uint23__t_1a29171ddcce02e2a475bdb4c55dd75740">operator-()</link> </para>
 </section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1af9a23f0211cd1107804f070cdd481736"/><section>
+    <title>operator/()</title>
+<indexterm><primary>operator/</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator/</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> int23_t::uint23_t::operator/ (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>Operator for dividing an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> with another. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Divides two <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s and returns the value. </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1acbcad2bdabd875ead20f69d4a5209a6f"/><section>
+    <title>operator/=()</title>
+<indexterm><primary>operator/=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator/=</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator/= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs)</computeroutput></para><para>
+
+<para>Operator for dividing an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> with the right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>The number current number is multiplied by</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                The value of current number is divided by rhs and then returned. See also <link linkend="_classint23__t_1_1uint23__t_1af9a23f0211cd1107804f070cdd481736">operator/()</link> </para>
+</section>
 <anchor xml:id="_classint23__t_1_1uint23__t_1a7bed1e2bcf9681811fd26f5517d191b5"/><section>
     <title>operator&lt;()</title>
 <indexterm><primary>operator&lt;</primary><secondary>int23_t::uint23_t</secondary></indexterm>
@@ -491,6 +707,38 @@ Parameters</title>
                 </formalpara>
                 Uses std::bitset::operator&lt;&lt; internally, see also <link xlink:href="https://en.cppreference.com/w/cpp/utility/bitset/operator_ltltgtgt">https://en.cppreference.com/w/cpp/utility/bitset/operator_ltltgtgt</link> </para>
 </section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a67f0b07bdfc9485c280534f28f48aa13"/><section>
+    <title>operator&lt;&lt;=()</title>
+<indexterm><primary>operator&lt;&lt;=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator&lt;&lt;=</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator&lt;&lt;= (int const &amp; rhs)</computeroutput></para><para>
+
+<para>Operator for shifting current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s internal bitset. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>The number of times bits are shifted</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Shifts the current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s bits, see also <link linkend="_classint23__t_1_1uint23__t_1a70af7156a939eb8ba7de4f04e07187e7">operator&lt;&lt;()</link> </para>
+</section>
 <anchor xml:id="_classint23__t_1_1uint23__t_1ad51b39b609bbf0795b2f4e71c010ac66"/><section>
     <title>operator&lt;=()</title>
 <indexterm><primary>operator&lt;=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
@@ -538,12 +786,13 @@ Parameters</title>
 Parameters</title>
                     <para>
                     <table frame="all">
-                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
                         <colspec colwidth="1*"/>
                         <colspec colwidth="4*"/>
                         <tbody>
                             <row>
-<entry>rhs</entry><entry>
+<entry>in</entry><entry>rhs</entry><entry>
 <para>Right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link></para>
 </entry>
                             </row>
@@ -649,6 +898,166 @@ Parameters</title>
                     </para>
                 </formalpara>
                 </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1ae1a8539d12895acf600fa221435da6bf"/><section>
+    <title>operator&gt;&gt;=()</title>
+<indexterm><primary>operator&gt;&gt;=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator&gt;&gt;=</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator&gt;&gt;= (int const &amp; rhs)</computeroutput></para><para>
+
+<para>Operator for shifting current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s internal bitset. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>The number of times bits are shifted</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Shifts the current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s bits, see also <link linkend="_classint23__t_1_1uint23__t_1a5d83b3c00134b03455b3c6e823c3c120">operator&gt;&gt;()</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1accc256271e9a9f7702f9f76df8a37426"/><section>
+    <title>operator^()</title>
+<indexterm><primary>operator^</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator^</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> int23_t::uint23_t::operator^ (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>Bitwise xor operator. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Uses std::bitset member function internally, see also <link xlink:href="https://en.cppreference.com/w/cpp/utility/bitset/operator_logic2">https://en.cppreference.com/w/cpp/utility/bitset/operator_logic2</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1ab05535887b8a002615de9ce1151ef89c"/><section>
+    <title>operator^=()</title>
+<indexterm><primary>operator^=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator^=</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator^= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs)</computeroutput></para><para>
+
+<para>Bitwise operator for xor-ing the current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Sets the current uitn23_t&apos;s value to bitwise xor of current and rhs&apos;s internal bitset. See also <link linkend="_classint23__t_1_1uint23__t_1accc256271e9a9f7702f9f76df8a37426">operator^()</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a7f2560da22c4e3a16d4bce9a8db0e505"/><section>
+    <title>operator|()</title>
+<indexterm><primary>operator|</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator|</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> int23_t::uint23_t::operator| (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>Bitwise or operator. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Uses std::bitset member function internally, see also <link xlink:href="https://en.cppreference.com/w/cpp/utility/bitset/operator_logic2">https://en.cppreference.com/w/cpp/utility/bitset/operator_logic2</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a6c478d390206801b05191f3e653de860"/><section>
+    <title>operator|=()</title>
+<indexterm><primary>operator|=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator|=</secondary></indexterm>
+<para><computeroutput><link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link> &amp; int23_t::uint23_t::operator|= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs)</computeroutput></para><para>
+
+<para>Bitwise operator for or-ing the current <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side <link linkend="_classint23__t_1_1uint23__t">uint23_t</link></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Sets the current uitn23_t&apos;s value to bitwise or of current and rhs&apos;s internal bitset. See also <link linkend="_classint23__t_1_1uint23__t_1a7f2560da22c4e3a16d4bce9a8db0e505">operator|()</link> </para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>
