@@ -4,8 +4,8 @@
 #include <string>
 #include <type_traits>
 /*!
- * @file int23_t.hpp
- * @brief Main header file for int23_t library
+ * @file uint23_t.hpp
+ * @brief Main header file for uint23_t class
  *
  * Contiains Functions required to make uint23_t work
  */
