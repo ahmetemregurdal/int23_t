@@ -6,12 +6,6 @@
 #include <type_traits>
 #include "int23_t.hpp"
 
-/*! @file int23_t.cpp
-* @brief Main implementation file of int23_t library
-*
-* Contains implementation of functions required to make int23_t work
-*/
-
 char int23_t::fullAdder(char const&b1, char const&b2, char&carry) {
 	const char ans = b1^b2^carry;
 	carry = (b1&b2)|(b1&carry)|(b2&carry);
