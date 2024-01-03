@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 #include <type_traits>
-#include "uint23_t.hpp"
+#include "../include/uint23_t.hpp"
 
 char int23_t::fullAdder(char const&b1, char const&b2, char&carry) {
 	const char ans = b1^b2^carry;
