@@ -147,6 +147,13 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::bitset&lt; 23 &gt; <link linkend="_classint23__t_1_1uint23__t_1a5dbba6fb777d2065ea934416aabe8682">num</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
 <section>
 <title>Detailed Description</title>
 
@@ -1058,6 +1065,16 @@ Parameters</title>
                     </para>
                 </formalpara>
                 Sets the current uitn23_t&apos;s value to bitwise or of current and rhs&apos;s internal bitset. See also <link linkend="_classint23__t_1_1uint23__t_1a7f2560da22c4e3a16d4bce9a8db0e505">operator|()</link> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a5dbba6fb777d2065ea934416aabe8682"/><section>
+    <title>num</title>
+<indexterm><primary>num</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>num</secondary></indexterm>
+<para><computeroutput>std::bitset&lt;23&gt; int23_t::uint23_t::num</computeroutput></para>
+<para>The main variable of the class, contains bits of an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>, see also <link xlink:href="https://en.cppreference.com/w/cpp/utility/bitset">https://en.cppreference.com/w/cpp/utility/bitset</link> </para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>

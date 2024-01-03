@@ -145,6 +145,13 @@ int23_t::uint23_t \- Unsigned 23 bit integer\&.
 .br
 .RI "Converts \fBuint23_t\fP to string in base 10\&. "
 .in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::bitset< 23 > \fBnum\fP"
+.br
+.in -1c
 .SH "Detailed Description"
 .PP 
 Unsigned 23 bit integer\&. 
@@ -467,6 +474,10 @@ Bitwise operator for or-ing the current \fBuint23_t\fP\&.
 .RE
 .PP
 Sets the current uitn23_t's value to bitwise or of current and rhs's internal bitset\&. See also \fBoperator|()\fP 
+.SH "Member Data Documentation"
+.PP 
+.SS "std::bitset<23> int23_t::uint23_t::num"
+The main variable of the class, contains bits of an \fBuint23_t\fP, see also https://en.cppreference.com/w/cpp/utility/bitset 
 
 .SH "Author"
 .PP 

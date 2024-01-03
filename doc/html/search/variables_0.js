@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['uint23_5fmax_0',['UINT23_MAX',['../uint23__t_8hpp.html#a97213726943c4e3c6a9143c106e45b1b',1,'int23_t']]],
-  ['uint23_5fmin_1',['UINT23_MIN',['../uint23__t_8hpp.html#a394f88afbad92f3475abf5beb64a0315',1,'int23_t']]]
+  ['int23_5fmax_0',['INT23_MAX',['../int23__t_8hpp.html#a9bab4903fba378abc1acdf4968312aa2',1,'int23_t']]],
+  ['int23_5fmin_1',['INT23_MIN',['../int23__t_8hpp.html#a4bbaf0efec4846bf8f1f624114f52910',1,'int23_t']]]
 ];

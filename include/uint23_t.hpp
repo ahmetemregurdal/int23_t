@@ -13,9 +13,8 @@
 namespace int23_t {
     /*! @brief Unsigned 23 bit integer */
 	class uint23_t {
-	private:
-		std::bitset<23> num; /*!< The main variable of the class, contains bits of an uint23_t, see also https://en.cppreference.com/w/cpp/utility/bitset */
 	public:
+		std::bitset<23> num; /*!< The main variable of the class, contains bits of an uint23_t, see also https://en.cppreference.com/w/cpp/utility/bitset */
         /*! @brief An operator to find if left uint23_t is smaller or equal to right uint23_t
          * @param[in] rhs Right hand side uint23_t
          *

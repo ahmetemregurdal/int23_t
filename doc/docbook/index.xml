@@ -6,10 +6,12 @@
     <xi:include href="md_README.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <chapter>
     <title>Class Documentation</title>
+    <xi:include href="classint23__t_1_1int23__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classint23__t_1_1uint23__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <chapter>
     <title>File Documentation</title>
+    <xi:include href="int23__t_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="int23__t_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="shared_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="shared_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

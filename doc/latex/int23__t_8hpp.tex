@@ -1,130 +1,89 @@
-\doxysection{int23\+\_\+t.\+hpp File Reference}
-\hypertarget{int23__t_8hpp}{}\label{int23__t_8hpp}\index{int23\_t.hpp@{int23\_t.hpp}}
+\doxysection{include/int23\+\_\+t.hpp File Reference}
+\hypertarget{int23__t_8hpp}{}\label{int23__t_8hpp}\index{include/int23\_t.hpp@{include/int23\_t.hpp}}
 
 
-Main header file for int23\+\_\+t library.  
+Main header file for int23\+\_\+t class.  
 
 
 {\ttfamily \#include $<$bitset$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include "{}shared.\+hpp"{}}\newline
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classint23__t_1_1uint23__t}{int23\+\_\+t\+::uint23\+\_\+t}}
-\begin{DoxyCompactList}\small\item\em Unsigned 23 bit integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+class \mbox{\hyperlink{classint23__t_1_1int23__t}{int23\+\_\+t\+::int23\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em 23 bit integer \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-char \mbox{\hyperlink{int23__t_8hpp_af5ade1fac67088c662c08a88e2358ae6}{int23\+\_\+t\+::full\+Adder}} (char const \&b1, char const \&b2, char \&carry)
-\begin{DoxyCompactList}\small\item\em An adder which adds carry and 2 bits together and calculates new carry and sum. \end{DoxyCompactList}\item 
-char \mbox{\hyperlink{int23__t_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f}{int23\+\_\+t\+::full\+Sub}} (char const \&b1, char const \&b2, char \&borrow)
-\begin{DoxyCompactList}\small\item\em A substractor function, similar to the adder function. Substracts left side from right side. \end{DoxyCompactList}\item 
-std\+::ostream \& \mbox{\hyperlink{int23__t_8hpp_a1914e870f88b2b77ef011daaab58f499}{int23\+\_\+t\+::operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} const \&num)
-\begin{DoxyCompactList}\small\item\em Operator for outputting an \doxylink{classint23__t_1_1uint23__t}{uint23\+\_\+t} using std\+::ostream class. \end{DoxyCompactList}\item 
-std\+::istream \& \mbox{\hyperlink{int23__t_8hpp_aebe3191c1e0c8e2c74e9c90b6d5e56b6}{int23\+\_\+t\+::operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \&num)
-\begin{DoxyCompactList}\small\item\em Operator for inputting an \doxylink{classint23__t_1_1uint23__t}{uint23\+\_\+t} using std\+::istream class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+std\+::ostream \& \mbox{\hyperlink{int23__t_8hpp_aba60b8aabd97fd4d198e3058ec0ba340}{int23\+\_\+t\+::operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{classint23__t_1_1int23__t}{int23\+\_\+t}} const \&num)
+\begin{DoxyCompactList}\small\item\em Operator for outputting an int23\+\_\+t using std\+::ostream class. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{int23__t_8hpp_a3570d947f0aec8f170ebb053b5a0a939}{int23\+\_\+t\+::operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{classint23__t_1_1int23__t}{int23\+\_\+t}} \&num)
+\begin{DoxyCompactList}\small\item\em Operator for inputting an int23\+\_\+t using std\+::istream class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-const \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \mbox{\hyperlink{int23__t_8hpp_a97213726943c4e3c6a9143c106e45b1b}{int23\+\_\+t\+::\+UINT23\+\_\+\+MAX}} (8388607)
+const \mbox{\hyperlink{classint23__t_1_1int23__t}{int23\+\_\+t}} \mbox{\hyperlink{int23__t_8hpp_a9bab4903fba378abc1acdf4968312aa2}{int23\+\_\+t\+::\+INT23\+\_\+\+MAX}} (8388607)
 \item 
-const \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \mbox{\hyperlink{int23__t_8hpp_a394f88afbad92f3475abf5beb64a0315}{int23\+\_\+t\+::\+UINT23\+\_\+\+MIN}} (0)
+const \mbox{\hyperlink{classint23__t_1_1int23__t}{int23\+\_\+t}} \mbox{\hyperlink{int23__t_8hpp_a4bbaf0efec4846bf8f1f624114f52910}{int23\+\_\+t\+::\+INT23\+\_\+\+MIN}} (0)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Main header file for int23\+\_\+t library. 
+Main header file for int23\+\_\+t class. 
 
-Contiains Functions required to make uint23\+\_\+t work 
+Contiains Functions required to make int23\+\_\+t work 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{int23__t_8hpp_af5ade1fac67088c662c08a88e2358ae6}\label{int23__t_8hpp_af5ade1fac67088c662c08a88e2358ae6} 
-\index{int23\_t.hpp@{int23\_t.hpp}!fullAdder@{fullAdder}}
-\index{fullAdder@{fullAdder}!int23\_t.hpp@{int23\_t.hpp}}
-\doxysubsubsection{\texorpdfstring{fullAdder()}{fullAdder()}}
-{\footnotesize\ttfamily char int23\+\_\+t\+::full\+Adder (\begin{DoxyParamCaption}\item[{char const \&}]{b1,  }\item[{char const \&}]{b2,  }\item[{char \&}]{carry }\end{DoxyParamCaption})}
-
-
-
-An adder which adds carry and 2 bits together and calculates new carry and sum. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em b1} & Bit 1, left side of addition \\
-\hline
-\mbox{\texttt{ in}}  & {\em b2} & Bit 2, right side of addition \\
-\hline
-\mbox{\texttt{ in}}  & {\em carry} & Carry of the addition, passes the reference and updates it with the new carry \\
-\hline
-\end{DoxyParams}
-\Hypertarget{int23__t_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f}\label{int23__t_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f} 
-\index{int23\_t.hpp@{int23\_t.hpp}!fullSub@{fullSub}}
-\index{fullSub@{fullSub}!int23\_t.hpp@{int23\_t.hpp}}
-\doxysubsubsection{\texorpdfstring{fullSub()}{fullSub()}}
-{\footnotesize\ttfamily char int23\+\_\+t\+::full\+Sub (\begin{DoxyParamCaption}\item[{char const \&}]{b1,  }\item[{char const \&}]{b2,  }\item[{char \&}]{borrow }\end{DoxyParamCaption})}
-
-
-
-A substractor function, similar to the adder function. Substracts left side from right side. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em b1} & Bit 1, left side of substraction \\
-\hline
-\mbox{\texttt{ in}}  & {\em b2} & Bit 2, right side of substraction \\
-\hline
-\mbox{\texttt{ in}}  & {\em borrow} & Borrow of the addition, passes the reference and updates it with new borrow \\
-\hline
-\end{DoxyParams}
-\Hypertarget{int23__t_8hpp_a1914e870f88b2b77ef011daaab58f499}\label{int23__t_8hpp_a1914e870f88b2b77ef011daaab58f499} 
+\Hypertarget{int23__t_8hpp_aba60b8aabd97fd4d198e3058ec0ba340}\label{int23__t_8hpp_aba60b8aabd97fd4d198e3058ec0ba340} 
 \index{int23\_t.hpp@{int23\_t.hpp}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!int23\_t.hpp@{int23\_t.hpp}}
 \doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
-{\footnotesize\ttfamily std\+::ostream \& int23\+\_\+t\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} const \&}]{num }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::ostream \& int23\+\_\+t\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{classint23__t_1_1int23__t}{int23\+\_\+t}} const \&}]{num }\end{DoxyParamCaption})}
 
 
 
-Operator for outputting an uint23\+\_\+t using std\+::ostream class. 
+Operator for outputting an int23\+\_\+t using std\+::ostream class. 
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em out} & Variable used for outputting, from std\+::ostream class like std\+::cout, see also \href{https://en.cppreference.com/w/cpp/io/basic_ostream}{\texttt{ https\+://en.\+cppreference.\+com/w/cpp/io/basic\+\_\+ostream}} \\
 \hline
-\mbox{\texttt{ in}}  & {\em num} & Variable thats outputted, from uint23\+\_\+t class\\
+\mbox{\texttt{ in}}  & {\em num} & Variable thats outputted, from int23\+\_\+t class\\
 \hline
 \end{DoxyParams}
-Converts uint23\+\_\+t to std\+::string to output integer \Hypertarget{int23__t_8hpp_aebe3191c1e0c8e2c74e9c90b6d5e56b6}\label{int23__t_8hpp_aebe3191c1e0c8e2c74e9c90b6d5e56b6} 
+Converts int23\+\_\+t to std\+::string to output integer \Hypertarget{int23__t_8hpp_a3570d947f0aec8f170ebb053b5a0a939}\label{int23__t_8hpp_a3570d947f0aec8f170ebb053b5a0a939} 
 \index{int23\_t.hpp@{int23\_t.hpp}!operator$>$$>$@{operator$>$$>$}}
 \index{operator$>$$>$@{operator$>$$>$}!int23\_t.hpp@{int23\_t.hpp}}
 \doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
-{\footnotesize\ttfamily std\+::istream \& int23\+\_\+t\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \&}]{num }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::istream \& int23\+\_\+t\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{classint23__t_1_1int23__t}{int23\+\_\+t}} \&}]{num }\end{DoxyParamCaption})}
 
 
 
-Operator for inputting an uint23\+\_\+t using std\+::istream class. 
+Operator for inputting an int23\+\_\+t using std\+::istream class. 
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em in} & Variable used for inputting, from std\+::istream class like std\+::cin, see also \href{https://en.cppreference.com/w/cpp/io/basic_istream}{\texttt{ https\+://en.\+cppreference.\+com/w/cpp/io/basic\+\_\+istream}} \\
 \hline
-\mbox{\texttt{ in}}  & {\em num} & Variable thats inputted, from uint23\+\_\+t class\\
+\mbox{\texttt{ in}}  & {\em num} & Variable thats inputted, from int23\+\_\+t class\\
 \hline
 \end{DoxyParams}
-Inputs int32\+\_\+t and converts it to uint23\+\_\+t internally 
+Inputs int32\+\_\+t and converts it to int23\+\_\+t internally 
 
 \doxysubsection{Variable Documentation}
-\Hypertarget{int23__t_8hpp_a97213726943c4e3c6a9143c106e45b1b}\label{int23__t_8hpp_a97213726943c4e3c6a9143c106e45b1b} 
-\index{int23\_t.hpp@{int23\_t.hpp}!UINT23\_MAX@{UINT23\_MAX}}
-\index{UINT23\_MAX@{UINT23\_MAX}!int23\_t.hpp@{int23\_t.hpp}}
-\doxysubsubsection{\texorpdfstring{UINT23\_MAX}{UINT23\_MAX}}
-{\footnotesize\ttfamily const uint23\+\_\+t int23\+\_\+t\+::\+UINT23\+\_\+\+MAX(8388607) (\begin{DoxyParamCaption}\item[{8388607}]{ }\end{DoxyParamCaption})}
+\Hypertarget{int23__t_8hpp_a9bab4903fba378abc1acdf4968312aa2}\label{int23__t_8hpp_a9bab4903fba378abc1acdf4968312aa2} 
+\index{int23\_t.hpp@{int23\_t.hpp}!INT23\_MAX@{INT23\_MAX}}
+\index{INT23\_MAX@{INT23\_MAX}!int23\_t.hpp@{int23\_t.hpp}}
+\doxysubsubsection{\texorpdfstring{INT23\_MAX}{INT23\_MAX}}
+{\footnotesize\ttfamily const int23\+\_\+t int23\+\_\+t\+::\+INT23\+\_\+\+MAX(8388607) (\begin{DoxyParamCaption}\item[{8388607}]{ }\end{DoxyParamCaption})}
 
-The maximum value of integers of class uint23\+\_\+t \Hypertarget{int23__t_8hpp_a394f88afbad92f3475abf5beb64a0315}\label{int23__t_8hpp_a394f88afbad92f3475abf5beb64a0315} 
-\index{int23\_t.hpp@{int23\_t.hpp}!UINT23\_MIN@{UINT23\_MIN}}
-\index{UINT23\_MIN@{UINT23\_MIN}!int23\_t.hpp@{int23\_t.hpp}}
-\doxysubsubsection{\texorpdfstring{UINT23\_MIN}{UINT23\_MIN}}
-{\footnotesize\ttfamily const uint23\+\_\+t int23\+\_\+t\+::\+UINT23\+\_\+\+MIN(0) (\begin{DoxyParamCaption}\item[{0}]{ }\end{DoxyParamCaption})}
+The maximum value of integers of class int23\+\_\+t \Hypertarget{int23__t_8hpp_a4bbaf0efec4846bf8f1f624114f52910}\label{int23__t_8hpp_a4bbaf0efec4846bf8f1f624114f52910} 
+\index{int23\_t.hpp@{int23\_t.hpp}!INT23\_MIN@{INT23\_MIN}}
+\index{INT23\_MIN@{INT23\_MIN}!int23\_t.hpp@{int23\_t.hpp}}
+\doxysubsubsection{\texorpdfstring{INT23\_MIN}{INT23\_MIN}}
+{\footnotesize\ttfamily const int23\+\_\+t int23\+\_\+t\+::\+INT23\+\_\+\+MIN(0) (\begin{DoxyParamCaption}\item[{0}]{ }\end{DoxyParamCaption})}
 
-The minimum value of integers of class uint23\+\_\+t, 0 because it is unsigned 
+The minimum value of integers of class int23\+\_\+t, 0 because it is unsigned 

@@ -1,32 +1,4 @@
 var searchData=
 [
-  ['operator_20std_3a_3astring_0',['string',['../classint23__t_1_1uint23__t.html#a5d7f1c5e33015c45ed7c13871e8c23e4',1,'int23_t::uint23_t']]],
-  ['operator_20t_1',['operator T',['../classint23__t_1_1uint23__t.html#aade22632e8d42b86f999a3cd0bc5946d',1,'int23_t::uint23_t']]],
-  ['operator_25_2',['operator%',['../classint23__t_1_1uint23__t.html#ad5adcae8522f4fef04c09a0d1760d181',1,'int23_t::uint23_t']]],
-  ['operator_25_3d_3',['operator%=',['../classint23__t_1_1uint23__t.html#aab9faa266b1f45f65a2fa2da63d328d9',1,'int23_t::uint23_t']]],
-  ['operator_26_4',['operator&amp;',['../classint23__t_1_1uint23__t.html#aea39812100e815d12dd3bc451f922267',1,'int23_t::uint23_t']]],
-  ['operator_26_3d_5',['operator&amp;=',['../classint23__t_1_1uint23__t.html#aad69ac608385c5f712a8e62285c10341',1,'int23_t::uint23_t']]],
-  ['operator_2a_6',['operator*',['../classint23__t_1_1uint23__t.html#a2b9ff8feeef2f153718423610c9d81d2',1,'int23_t::uint23_t']]],
-  ['operator_2a_3d_7',['operator*=',['../classint23__t_1_1uint23__t.html#a9a070fe5e8d807630d67f3b9a4249b66',1,'int23_t::uint23_t']]],
-  ['operator_2b_8',['operator+',['../classint23__t_1_1uint23__t.html#ad0f2f7227ac42fa8900e2491a0ee8cdc',1,'int23_t::uint23_t']]],
-  ['operator_2b_2b_9',['operator++',['../classint23__t_1_1uint23__t.html#af5f2c04bfc4ccb9e8ceadad4ac03a483',1,'int23_t::uint23_t::operator++()'],['../classint23__t_1_1uint23__t.html#a18eabad81a1159f123ce93ce3f22e26d',1,'int23_t::uint23_t::operator++(int)']]],
-  ['operator_2b_3d_10',['operator+=',['../classint23__t_1_1uint23__t.html#a481b231de5db4cc6b54906f05018a75a',1,'int23_t::uint23_t']]],
-  ['operator_2d_11',['operator-',['../classint23__t_1_1uint23__t.html#a29171ddcce02e2a475bdb4c55dd75740',1,'int23_t::uint23_t']]],
-  ['operator_2d_2d_12',['operator--',['../classint23__t_1_1uint23__t.html#a70574f4759c7087d4597bbd8141a0023',1,'int23_t::uint23_t::operator--()'],['../classint23__t_1_1uint23__t.html#aec0919e3cc5a7d86b47f3f9e3e1ee922',1,'int23_t::uint23_t::operator--(int)']]],
-  ['operator_2d_3d_13',['operator-=',['../classint23__t_1_1uint23__t.html#af1c153ec6ea441fc40d190c53487cdb3',1,'int23_t::uint23_t']]],
-  ['operator_2f_14',['operator/',['../classint23__t_1_1uint23__t.html#af9a23f0211cd1107804f070cdd481736',1,'int23_t::uint23_t']]],
-  ['operator_2f_3d_15',['operator/=',['../classint23__t_1_1uint23__t.html#acbcad2bdabd875ead20f69d4a5209a6f',1,'int23_t::uint23_t']]],
-  ['operator_3c_16',['operator&lt;',['../classint23__t_1_1uint23__t.html#a7bed1e2bcf9681811fd26f5517d191b5',1,'int23_t::uint23_t']]],
-  ['operator_3c_3c_17',['operator&lt;&lt;',['../classint23__t_1_1uint23__t.html#a70af7156a939eb8ba7de4f04e07187e7',1,'int23_t::uint23_t::operator&lt;&lt;()'],['../uint23__t_8hpp.html#a1914e870f88b2b77ef011daaab58f499',1,'int23_t::operator&lt;&lt;()']]],
-  ['operator_3c_3c_3d_18',['operator&lt;&lt;=',['../classint23__t_1_1uint23__t.html#a67f0b07bdfc9485c280534f28f48aa13',1,'int23_t::uint23_t']]],
-  ['operator_3c_3d_19',['operator&lt;=',['../classint23__t_1_1uint23__t.html#ad51b39b609bbf0795b2f4e71c010ac66',1,'int23_t::uint23_t']]],
-  ['operator_3d_3d_20',['operator==',['../classint23__t_1_1uint23__t.html#a94b492ea873722c57de6997d17ead8f1',1,'int23_t::uint23_t']]],
-  ['operator_3e_21',['operator&gt;',['../classint23__t_1_1uint23__t.html#ac442c28cbb31416e651f2497d81102a5',1,'int23_t::uint23_t']]],
-  ['operator_3e_3d_22',['operator&gt;=',['../classint23__t_1_1uint23__t.html#a94661cc5c91f6166324a04b924ae8384',1,'int23_t::uint23_t']]],
-  ['operator_3e_3e_23',['operator&gt;&gt;',['../classint23__t_1_1uint23__t.html#a5d83b3c00134b03455b3c6e823c3c120',1,'int23_t::uint23_t::operator&gt;&gt;()'],['../uint23__t_8hpp.html#aebe3191c1e0c8e2c74e9c90b6d5e56b6',1,'int23_t::operator&gt;&gt;()']]],
-  ['operator_3e_3e_3d_24',['operator&gt;&gt;=',['../classint23__t_1_1uint23__t.html#ae1a8539d12895acf600fa221435da6bf',1,'int23_t::uint23_t']]],
-  ['operator_5e_25',['operator^',['../classint23__t_1_1uint23__t.html#accc256271e9a9f7702f9f76df8a37426',1,'int23_t::uint23_t']]],
-  ['operator_5e_3d_26',['operator^=',['../classint23__t_1_1uint23__t.html#ab05535887b8a002615de9ce1151ef89c',1,'int23_t::uint23_t']]],
-  ['operator_7c_27',['operator|',['../classint23__t_1_1uint23__t.html#a7f2560da22c4e3a16d4bce9a8db0e505',1,'int23_t::uint23_t']]],
-  ['operator_7c_3d_28',['operator|=',['../classint23__t_1_1uint23__t.html#a6c478d390206801b05191f3e653de860',1,'int23_t::uint23_t']]]
+  ['int23_5ft_0',['int23_t',['../classint23__t_1_1int23__t.html#a2926795f9163d71935a87bb7052893bc',1,'int23_t::int23_t::int23_t(T const &amp;a)'],['../classint23__t_1_1int23__t.html#a7f795a42026a9028241fa1535a569808',1,'int23_t::int23_t::int23_t()']]]
 ];
