@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_uint23__t_8hpp" xml:lang="en-US">
-<title>src/uint23_t.hpp File Reference</title>
-<indexterm><primary>src/uint23_t.hpp</primary></indexterm>
+<title>include/uint23_t.hpp File Reference</title>
+<indexterm><primary>include/uint23_t.hpp</primary></indexterm>
 <para>
 
 <para>Main header file for uint23_t class. </para>
  
 </para>
-<programlisting linenumbering="unnumbered">#include &lt;bitset&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;type_traits&gt;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &lt;bitset&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;type_traits&gt;<?linebreak?>#include &quot;shared.hpp&quot;<?linebreak?></programlisting><simplesect>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_classint23__t_1_1uint23__t">int23_t::uint23_t</link></para>
@@ -19,14 +19,6 @@
 <simplesect>
     <title>Functions    </title>
         <itemizedlist>
-            <listitem><para>char <link linkend="_uint23__t_8hpp_1af5ade1fac67088c662c08a88e2358ae6">int23_t::fullAdder</link> (char const &amp;b1, char const &amp;b2, char &amp;carry)</para>
-
-<para>An adder which adds carry and 2 bits together and calculates new carry and sum. </para>
-</listitem>
-            <listitem><para>char <link linkend="_uint23__t_8hpp_1a4db13892bc7f11d6698b6bb72bf73a1f">int23_t::fullSub</link> (char const &amp;b1, char const &amp;b2, char &amp;borrow)</para>
-
-<para>A substractor function, similar to the adder function. Substracts left side from right side. </para>
-</listitem>
             <listitem><para>std::ostream &amp; <link linkend="_uint23__t_8hpp_1a1914e870f88b2b77ef011daaab58f499">int23_t::operator&lt;&lt;</link> (std::ostream &amp;out, <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;num)</para>
 
 <para>Operator for outputting an <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> using std::ostream class. </para>
@@ -55,90 +47,6 @@
 </section>
 <section>
 <title>Function Documentation</title>
-<anchor xml:id="_uint23__t_8hpp_1af5ade1fac67088c662c08a88e2358ae6"/><section>
-    <title>fullAdder()</title>
-<indexterm><primary>fullAdder</primary><secondary>uint23_t.hpp</secondary></indexterm>
-<indexterm><primary>uint23_t.hpp</primary><secondary>fullAdder</secondary></indexterm>
-<para><computeroutput>char int23_t::fullAdder (char const &amp; b1, char const &amp; b2, char &amp; carry)</computeroutput></para><para>
-
-<para>An adder which adds carry and 2 bits together and calculates new carry and sum. </para>
-</para>
-
-<para>
-                <formalpara>
-                    <title>
-Parameters</title>
-                    <para>
-                    <table frame="all">
-                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
-                        <colspec colwidth="1*"/>
-                        <colspec colwidth="1*"/>
-                        <colspec colwidth="4*"/>
-                        <tbody>
-                            <row>
-<entry>in</entry><entry>b1</entry><entry>
-<para>Bit 1, left side of addition </para>
-</entry>
-                            </row>
-                            <row>
-<entry>in</entry><entry>b2</entry><entry>
-<para>Bit 2, right side of addition </para>
-</entry>
-                            </row>
-                            <row>
-<entry>in</entry><entry>carry</entry><entry>
-<para>Carry of the addition, passes the reference and updates it with the new carry </para>
-</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                    </table>
-                    </para>
-                </formalpara>
-                </para>
-</section>
-<anchor xml:id="_uint23__t_8hpp_1a4db13892bc7f11d6698b6bb72bf73a1f"/><section>
-    <title>fullSub()</title>
-<indexterm><primary>fullSub</primary><secondary>uint23_t.hpp</secondary></indexterm>
-<indexterm><primary>uint23_t.hpp</primary><secondary>fullSub</secondary></indexterm>
-<para><computeroutput>char int23_t::fullSub (char const &amp; b1, char const &amp; b2, char &amp; borrow)</computeroutput></para><para>
-
-<para>A substractor function, similar to the adder function. Substracts left side from right side. </para>
-</para>
-
-<para>
-                <formalpara>
-                    <title>
-Parameters</title>
-                    <para>
-                    <table frame="all">
-                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
-                        <colspec colwidth="1*"/>
-                        <colspec colwidth="1*"/>
-                        <colspec colwidth="4*"/>
-                        <tbody>
-                            <row>
-<entry>in</entry><entry>b1</entry><entry>
-<para>Bit 1, left side of substraction </para>
-</entry>
-                            </row>
-                            <row>
-<entry>in</entry><entry>b2</entry><entry>
-<para>Bit 2, right side of substraction </para>
-</entry>
-                            </row>
-                            <row>
-<entry>in</entry><entry>borrow</entry><entry>
-<para>Borrow of the addition, passes the reference and updates it with new borrow </para>
-</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                    </table>
-                    </para>
-                </formalpara>
-                </para>
-</section>
 <anchor xml:id="_uint23__t_8hpp_1a1914e870f88b2b77ef011daaab58f499"/><section>
     <title>operator&lt;&lt;()</title>
 <indexterm><primary>operator&lt;&lt;</primary><secondary>uint23_t.hpp</secondary></indexterm>

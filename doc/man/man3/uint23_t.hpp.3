@@ -1,8 +1,8 @@
-.TH "src/uint23_t.hpp" 3 "INT23_t" \" -*- nroff -*-
+.TH "include/uint23_t.hpp" 3 "INT23_t" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-src/uint23_t.hpp \- Main header file for uint23_t class\&.  
+include/uint23_t.hpp \- Main header file for uint23_t class\&.  
 
 .SH SYNOPSIS
 .br
@@ -14,6 +14,8 @@ src/uint23_t.hpp \- Main header file for uint23_t class\&.
 \fC#include <string>\fP
 .br
 \fC#include <type_traits>\fP
+.br
+\fC#include 'shared\&.hpp'\fP
 .br
 
 .SS "Classes"
@@ -27,14 +29,6 @@ src/uint23_t.hpp \- Main header file for uint23_t class\&.
 .SS "Functions"
 
 .in +1c
-.ti -1c
-.RI "char \fBint23_t::fullAdder\fP (char const &b1, char const &b2, char &carry)"
-.br
-.RI "An adder which adds carry and 2 bits together and calculates new carry and sum\&. "
-.ti -1c
-.RI "char \fBint23_t::fullSub\fP (char const &b1, char const &b2, char &borrow)"
-.br
-.RI "A substractor function, similar to the adder function\&. Substracts left side from right side\&. "
 .ti -1c
 .RI "std::ostream & \fBint23_t::operator<<\fP (std::ostream &out, \fBuint23_t\fP const &num)"
 .br
@@ -61,36 +55,6 @@ Main header file for uint23_t class\&.
 Contiains Functions required to make uint23_t work 
 .SH "Function Documentation"
 .PP 
-.SS "char int23_t::fullAdder (char const & b1, char const & b2, char & carry)"
-
-.PP
-An adder which adds carry and 2 bits together and calculates new carry and sum\&. 
-.PP
-\fBParameters\fP
-.RS 4
-\fIb1\fP Bit 1, left side of addition 
-.br
-\fIb2\fP Bit 2, right side of addition 
-.br
-\fIcarry\fP Carry of the addition, passes the reference and updates it with the new carry 
-.RE
-.PP
-
-.SS "char int23_t::fullSub (char const & b1, char const & b2, char & borrow)"
-
-.PP
-A substractor function, similar to the adder function\&. Substracts left side from right side\&. 
-.PP
-\fBParameters\fP
-.RS 4
-\fIb1\fP Bit 1, left side of substraction 
-.br
-\fIb2\fP Bit 2, right side of substraction 
-.br
-\fIborrow\fP Borrow of the addition, passes the reference and updates it with new borrow 
-.RE
-.PP
-
 .SS "std::ostream & int23_t::operator<< (std::ostream & out, \fBuint23_t\fP const & num)"
 
 .PP

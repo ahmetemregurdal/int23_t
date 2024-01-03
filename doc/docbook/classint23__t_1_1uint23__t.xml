@@ -437,7 +437,7 @@ Parameters</title>
                     </table>
                     </para>
                 </formalpara>
-                Uses <link linkend="_uint23__t_8hpp_1af5ade1fac67088c662c08a88e2358ae6">fullAdder()</link> function to calculate sum of two <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s </para>
+                Uses <link linkend="_shared_8hpp_1af5ade1fac67088c662c08a88e2358ae6">fullAdder()</link> function to calculate sum of two <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s </para>
 </section>
 <anchor xml:id="_classint23__t_1_1uint23__t_1af5f2c04bfc4ccb9e8ceadad4ac03a483"/><section>
     <title>operator++()<computeroutput>[1/2]</computeroutput></title>
@@ -523,7 +523,7 @@ Parameters</title>
                     </table>
                     </para>
                 </formalpara>
-                Uses <link linkend="_uint23__t_8hpp_1a4db13892bc7f11d6698b6bb72bf73a1f">fullSub()</link> function to calculate difference of two <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s </para>
+                Uses <link linkend="_shared_8hpp_1a4db13892bc7f11d6698b6bb72bf73a1f">fullSub()</link> function to calculate difference of two <link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&apos;s </para>
 </section>
 <anchor xml:id="_classint23__t_1_1uint23__t_1a70574f4759c7087d4597bbd8141a0023"/><section>
     <title>operator--()<computeroutput>[1/2]</computeroutput></title>
@@ -1061,5 +1061,5 @@ Parameters</title>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>
-src/<link linkend="_uint23__t_8hpp">uint23_t.hpp</link>src/uint23_t.cpp</section>
+include/<link linkend="_uint23__t_8hpp">uint23_t.hpp</link>src/uint23_t.cpp</section>
 </section>

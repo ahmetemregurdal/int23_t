@@ -1,0 +1,60 @@
+\doxysection{include/shared.hpp File Reference}
+\hypertarget{shared_8hpp}{}\label{shared_8hpp}\index{include/shared.hpp@{include/shared.hpp}}
+
+
+Header for shared functions accross headers.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{shared_8hpp_af5ade1fac67088c662c08a88e2358ae6}{int23\+\_\+t\+::full\+Adder}} (char const \&b1, char const \&b2, char \&carry)
+\begin{DoxyCompactList}\small\item\em An adder which adds carry and 2 bits together and calculates new carry and sum. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{shared_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f}{int23\+\_\+t\+::full\+Sub}} (char const \&b1, char const \&b2, char \&borrow)
+\begin{DoxyCompactList}\small\item\em A substractor function, similar to the adder function. Substracts left side from right side. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header for shared functions accross headers. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{shared_8hpp_af5ade1fac67088c662c08a88e2358ae6}\label{shared_8hpp_af5ade1fac67088c662c08a88e2358ae6} 
+\index{shared.hpp@{shared.hpp}!fullAdder@{fullAdder}}
+\index{fullAdder@{fullAdder}!shared.hpp@{shared.hpp}}
+\doxysubsubsection{\texorpdfstring{fullAdder()}{fullAdder()}}
+{\footnotesize\ttfamily char int23\+\_\+t\+::full\+Adder (\begin{DoxyParamCaption}\item[{char const \&}]{b1,  }\item[{char const \&}]{b2,  }\item[{char \&}]{carry }\end{DoxyParamCaption})}
+
+
+
+An adder which adds carry and 2 bits together and calculates new carry and sum. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b1} & Bit 1, left side of addition \\
+\hline
+\mbox{\texttt{ in}}  & {\em b2} & Bit 2, right side of addition \\
+\hline
+\mbox{\texttt{ in}}  & {\em carry} & Carry of the addition, passes the reference and updates it with the new carry \\
+\hline
+\end{DoxyParams}
+\Hypertarget{shared_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f}\label{shared_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f} 
+\index{shared.hpp@{shared.hpp}!fullSub@{fullSub}}
+\index{fullSub@{fullSub}!shared.hpp@{shared.hpp}}
+\doxysubsubsection{\texorpdfstring{fullSub()}{fullSub()}}
+{\footnotesize\ttfamily char int23\+\_\+t\+::full\+Sub (\begin{DoxyParamCaption}\item[{char const \&}]{b1,  }\item[{char const \&}]{b2,  }\item[{char \&}]{borrow }\end{DoxyParamCaption})}
+
+
+
+A substractor function, similar to the adder function. Substracts left side from right side. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b1} & Bit 1, left side of substraction \\
+\hline
+\mbox{\texttt{ in}}  & {\em b2} & Bit 2, right side of substraction \\
+\hline
+\mbox{\texttt{ in}}  & {\em borrow} & Borrow of the addition, passes the reference and updates it with new borrow \\
+\hline
+\end{DoxyParams}

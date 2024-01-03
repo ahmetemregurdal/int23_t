@@ -1,5 +1,5 @@
-\doxysection{src/uint23\+\_\+t.hpp File Reference}
-\hypertarget{uint23__t_8hpp}{}\label{uint23__t_8hpp}\index{src/uint23\_t.hpp@{src/uint23\_t.hpp}}
+\doxysection{include/uint23\+\_\+t.hpp File Reference}
+\hypertarget{uint23__t_8hpp}{}\label{uint23__t_8hpp}\index{include/uint23\_t.hpp@{include/uint23\_t.hpp}}
 
 
 Main header file for uint23\+\_\+t class.  
@@ -9,6 +9,7 @@ Main header file for uint23\+\_\+t class.
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include "{}shared.\+hpp"{}}\newline
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -17,10 +18,6 @@ class \mbox{\hyperlink{classint23__t_1_1uint23__t}{int23\+\_\+t\+::uint23\+\_\+t
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-char \mbox{\hyperlink{uint23__t_8hpp_af5ade1fac67088c662c08a88e2358ae6}{int23\+\_\+t\+::full\+Adder}} (char const \&b1, char const \&b2, char \&carry)
-\begin{DoxyCompactList}\small\item\em An adder which adds carry and 2 bits together and calculates new carry and sum. \end{DoxyCompactList}\item 
-char \mbox{\hyperlink{uint23__t_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f}{int23\+\_\+t\+::full\+Sub}} (char const \&b1, char const \&b2, char \&borrow)
-\begin{DoxyCompactList}\small\item\em A substractor function, similar to the adder function. Substracts left side from right side. \end{DoxyCompactList}\item 
 std\+::ostream \& \mbox{\hyperlink{uint23__t_8hpp_a1914e870f88b2b77ef011daaab58f499}{int23\+\_\+t\+::operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} const \&num)
 \begin{DoxyCompactList}\small\item\em Operator for outputting an \doxylink{classint23__t_1_1uint23__t}{uint23\+\_\+t} using std\+::ostream class. \end{DoxyCompactList}\item 
 std\+::istream \& \mbox{\hyperlink{uint23__t_8hpp_aebe3191c1e0c8e2c74e9c90b6d5e56b6}{int23\+\_\+t\+::operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \&num)
@@ -40,44 +37,6 @@ Main header file for uint23\+\_\+t class.
 Contiains Functions required to make uint23\+\_\+t work 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{uint23__t_8hpp_af5ade1fac67088c662c08a88e2358ae6}\label{uint23__t_8hpp_af5ade1fac67088c662c08a88e2358ae6} 
-\index{uint23\_t.hpp@{uint23\_t.hpp}!fullAdder@{fullAdder}}
-\index{fullAdder@{fullAdder}!uint23\_t.hpp@{uint23\_t.hpp}}
-\doxysubsubsection{\texorpdfstring{fullAdder()}{fullAdder()}}
-{\footnotesize\ttfamily char int23\+\_\+t\+::full\+Adder (\begin{DoxyParamCaption}\item[{char const \&}]{b1,  }\item[{char const \&}]{b2,  }\item[{char \&}]{carry }\end{DoxyParamCaption})}
-
-
-
-An adder which adds carry and 2 bits together and calculates new carry and sum. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em b1} & Bit 1, left side of addition \\
-\hline
-\mbox{\texttt{ in}}  & {\em b2} & Bit 2, right side of addition \\
-\hline
-\mbox{\texttt{ in}}  & {\em carry} & Carry of the addition, passes the reference and updates it with the new carry \\
-\hline
-\end{DoxyParams}
-\Hypertarget{uint23__t_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f}\label{uint23__t_8hpp_a4db13892bc7f11d6698b6bb72bf73a1f} 
-\index{uint23\_t.hpp@{uint23\_t.hpp}!fullSub@{fullSub}}
-\index{fullSub@{fullSub}!uint23\_t.hpp@{uint23\_t.hpp}}
-\doxysubsubsection{\texorpdfstring{fullSub()}{fullSub()}}
-{\footnotesize\ttfamily char int23\+\_\+t\+::full\+Sub (\begin{DoxyParamCaption}\item[{char const \&}]{b1,  }\item[{char const \&}]{b2,  }\item[{char \&}]{borrow }\end{DoxyParamCaption})}
-
-
-
-A substractor function, similar to the adder function. Substracts left side from right side. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em b1} & Bit 1, left side of substraction \\
-\hline
-\mbox{\texttt{ in}}  & {\em b2} & Bit 2, right side of substraction \\
-\hline
-\mbox{\texttt{ in}}  & {\em borrow} & Borrow of the addition, passes the reference and updates it with new borrow \\
-\hline
-\end{DoxyParams}
 \Hypertarget{uint23__t_8hpp_a1914e870f88b2b77ef011daaab58f499}\label{uint23__t_8hpp_a1914e870f88b2b77ef011daaab58f499} 
 \index{uint23\_t.hpp@{uint23\_t.hpp}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!uint23\_t.hpp@{uint23\_t.hpp}}
