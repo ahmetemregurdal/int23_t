@@ -11,41 +11,41 @@
  * Contiains Functions required to make uint23_t work
  */
 namespace int23_t {
-    /*! @brief Unsigned 23 bit integer */
+	/*! @brief Unsigned 23 bit integer */
 	class uint23_t {
 	public:
 		std::bitset<23> num; /*!< The main variable of the class, contains bits of an uint23_t, see also https://en.cppreference.com/w/cpp/utility/bitset */
-        /*! @brief An operator to find if left uint23_t is smaller or equal to right uint23_t
-         * @param[in] rhs Right hand side uint23_t
-         *
-         * If two bitsets are same, function returns true. Else it finds the first
-         * location where bits differ, and returns false if left side integers that bit
-         * is 1, returns true otherwise
-         */
+		/*! @brief An operator to find if left uint23_t is smaller or equal to right uint23_t
+		 * @param[in] rhs Right hand side uint23_t
+		 *
+		 * If two bitsets are same, function returns true. Else it finds the first
+		 * location where bits differ, and returns false if left side integers that bit
+		 * is 1, returns true otherwise
+		 */
 		bool operator<= (uint23_t const& rhs) const;
-        /*! @brief An operator to find if left uint23_t is smaller than right uint23_t
-         * @param[in] rhs Right hand side uint23_t
-         *
-         * If two bitsets are same, function returns false. Else it finds the first
-         * location where bits differ, and returns false if left side integers that bit
-         * is 1, returns false true
-         */
+		/*! @brief An operator to find if left uint23_t is smaller than right uint23_t
+		 * @param[in] rhs Right hand side uint23_t
+		 *
+		 * If two bitsets are same, function returns false. Else it finds the first
+		 * location where bits differ, and returns false if left side integers that bit
+		 * is 1, returns false true
+		 */
 		bool operator< (uint23_t const& rhs) const;
-        /*! @brief An operator to find if left uint23_t is greater or equal to right uint23_t
-         * @param[in] rhs Right hand side uint23_t
-         *
-         * If two bitsets are same, function returns true. Else it finds the first
-         * location where bits differ, and returns true if left side integers that bit
-         * is 1, returns false otherwise
-         */
+		/*! @brief An operator to find if left uint23_t is greater or equal to right uint23_t
+		 * @param[in] rhs Right hand side uint23_t
+		 *
+		 * If two bitsets are same, function returns true. Else it finds the first
+		 * location where bits differ, and returns true if left side integers that bit
+		 * is 1, returns false otherwise
+		 */
 		bool operator>= (uint23_t const& rhs) const;
-        /*! @brief An operator to find if left uint23_t is greater than right uint23_t
-         * @param[in] rhs Right hand side uint23_t
-         *
-         * If two bitsets are same, function returns false. Else it finds the first
-         * location where bits differ, and returns true if left side integers that bit
-         * is 1, returns false otherwise
-         */
+		/*! @brief An operator to find if left uint23_t is greater than right uint23_t
+		 * @param[in] rhs Right hand side uint23_t
+		 *
+		 * If two bitsets are same, function returns false. Else it finds the first
+		 * location where bits differ, and returns true if left side integers that bit
+		 * is 1, returns false otherwise
+		 */
 		bool operator> (uint23_t const& rhs) const;
 		/*! @brief An operator to add two uint23_t's together
 		 * @param[in] rhs Right hand side uint23_t
@@ -92,29 +92,29 @@ namespace int23_t {
 		 * Uses std::bitset::operator<< internally, see also https://en.cppreference.com/w/cpp/utility/bitset/operator_ltltgtgt
 		 */
 		uint23_t operator<< (int const& rhs) const;
-        /*! @brief Right bitshift operator, same thing as dividing by 2 n times.
-         * @param[in] rhs The number of times uint23_t's bits are shifted.
-         */
+		/*! @brief Right bitshift operator, same thing as dividing by 2 n times.
+		 * @param[in] rhs The number of times uint23_t's bits are shifted.
+		 */
 		uint23_t operator>> (int const& rhs) const;
-        /*! @brief Operator for adding an uint23_t's value to the left uint23_t
-         * @param[in] rhs The number added to current number
-         *
-         * The value of rhs is added to current number and current number is returned.
-         * See also ::operator+()
-         */
+		/*! @brief Operator for adding an uint23_t's value to the left uint23_t
+		 * @param[in] rhs The number added to current number
+		 *
+		 * The value of rhs is added to current number and current number is returned.
+		 * See also ::operator+()
+		 */
 		uint23_t& operator+= (uint23_t const& rhs);
-        /*! @brief Operator for substracting an uint23_t's value from the left uint23_t
-         * @param[in] rhs The number substracted from the current number
-         *
-         * The value of rhs is substracted from current number and current number is returned.
-         * See also ::operator-()
-         */
+		/*! @brief Operator for substracting an uint23_t's value from the left uint23_t
+		 * @param[in] rhs The number substracted from the current number
+		 *
+		 * The value of rhs is substracted from current number and current number is returned.
+		 * See also ::operator-()
+		 */
 		uint23_t& operator-= (uint23_t const& rhs);
-        /*! @brief Operator for multiplying an uint23_t with the one in the right
-         * @param[in] rhs the number current number is multiplied by.
-         *
-         * The value of current number is multiplied by rhs and then returned. See also ::operator*()
-         */
+		/*! @brief Operator for multiplying an uint23_t with the one in the right
+		 * @param[in] rhs the number current number is multiplied by.
+		 *
+		 * The value of current number is multiplied by rhs and then returned. See also ::operator*()
+		 */
 		uint23_t& operator*= (uint23_t const& rhs);
 		/*! @brief Operator for dividing an uint23_t with the right hand side uint23_t
 		 * @param[in] rhs The number current number is multiplied by
@@ -128,33 +128,33 @@ namespace int23_t {
 		 * The value of current number is equalised to the modulo of that number in modulo rhs. See also ::operator%()
 		 */
 		uint23_t& operator%= (uint23_t const& rhs);
-        /*! @brief prefix increment operator
-         *
-         * Same as ::operator+=(uint23_t const& 1)
-         */
+		/*! @brief prefix increment operator
+		 *
+		 * Same as ::operator+=(uint23_t const& 1)
+		 */
 		uint23_t& operator++ ();
-        /*! @brief prefix decrement operator
-         *
-         * Same as ::operator-=(uint23_t const& 1)
-         */
+		/*! @brief prefix decrement operator
+		 *
+		 * Same as ::operator-=(uint23_t const& 1)
+		 */
 		uint23_t& operator-- ();
-        /*! @brief postfix increment operator
-         *
-         * The current value is returned and than 1 is added to the current value.
-         * Same as ::operator++() return ::operator-(1)
-         */
+		/*! @brief postfix increment operator
+		 *
+		 * The current value is returned and than 1 is added to the current value.
+		 * Same as ::operator++() return ::operator-(1)
+		 */
 		uint23_t operator++ (int);
-        /*! @brief postfix decrement operator
-         *
-         * The current value is returned and than 1 is substracted from the current value.
-         * Same as ::operator--() return ::operator+(1)
-         */
+		/*! @brief postfix decrement operator
+		 *
+		 * The current value is returned and than 1 is substracted from the current value.
+		 * Same as ::operator--() return ::operator+(1)
+		 */
 		uint23_t operator-- (int);
-        /*! @brief Checks if two uint23_t are same
-         * @param[in] rhs Right hand side uint23_t
-         * 
-         * Individualy checks every bit and if a single is different returns false, else returns true.
-         */
+		/*! @brief Checks if two uint23_t are same
+		 * @param[in] rhs Right hand side uint23_t
+		 * 
+		 * Individualy checks every bit and if a single is different returns false, else returns true.
+		 */
 		bool operator== (uint23_t const& rhs) const;
 		/*! @brief Operator for dividing an uint23_t with another
 		 * @param[in] rhs Right hand side uint23_t
@@ -216,8 +216,8 @@ namespace int23_t {
 		 * Sets the current uitn23_t's value to bitwise xor of current and rhs's internal bitset. See also ::operator^()
 		 */
 		uint23_t& operator^= (uint23_t const& rhs);
-        /*! @brief Converts uint23_t to string in base 10
-         */
+		/*! @brief Converts uint23_t to string in base 10
+		 */
 		operator std::string() const;
 		/*! @brief Invert every bit operator
 		 */
