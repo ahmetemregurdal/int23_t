@@ -145,6 +145,10 @@
 
 <para>Converts <link linkend="_classint23__t_1_1uint23__t">uint23_t</link> to string in base 10. </para>
 </listitem>
+            <listitem><para><anchor xml:id="_classint23__t_1_1uint23__t_1a05b9940c785029021e49c7de59b1c0ef"/><link linkend="_classint23__t_1_1uint23__t">uint23_t</link> <emphasis role="strong">operator~</emphasis> () const</para>
+
+<para>Invert every bit operator. </para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
