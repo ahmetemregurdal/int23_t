@@ -235,3 +235,8 @@ int23_t::uint23_t& int23_t::uint23_t::operator^=(uint23_t const&rhs) {
 	this->num ^= rhs.num;
 	return *this;
 }
+int23_t::uint23_t int23_t::uint23_t::operator~() const {
+	uint23_t tmp = *this;
+	tmp.num = ~tmp.num;
+	return tmp;
+}

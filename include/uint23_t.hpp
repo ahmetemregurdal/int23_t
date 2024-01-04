@@ -219,6 +219,9 @@ namespace int23_t {
         /*! @brief Converts uint23_t to string in base 10
          */
 		operator std::string() const;
+		/*! @brief Invert every bit operator
+		 */
+		uint23_t operator~() const;
 	};
 	const uint23_t UINT23_MAX(8388607); /*!< The maximum value of integers of class uint23_t */
 	const uint23_t UINT23_MIN(0); /*!< The minimum value of integers of class uint23_t, 0 because it is unsigned */

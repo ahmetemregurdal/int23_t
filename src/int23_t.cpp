@@ -5,7 +5,13 @@
 #include <string>
 #include <type_traits>
 #include "../include/int23_t.hpp"
+#include "../include/uint23_t.hpp"
 
+int23_t::int23_t int23_t::int23_t::operator~() const {
+	int23_t tmp;
+	tmp.num = ~this->num;
+	return tmp;
+}
 bool int23_t::int23_t::operator<=(int23_t const&rhs) const {
 	bool xo = false;
 	if(!(this->num[22] ^ rhs.num[22])) xo = this->num[22];
@@ -78,12 +84,11 @@ int23_t::int23_t& int23_t::int23_t::operator+=(int23_t const&rhs) {
 	return *this;
 }
 int23_t::int23_t int23_t::int23_t::operator*(int23_t const&rhs) const {
-	int23_t ans;
-	if(this->num.count()<rhs.num.count()) {
-		for(int i=0; i<23; i++) if(this->num[i]) ans += (rhs<<i);
-	}
-	else {
-		for(int i=0; i<23; i++) if(rhs.num[i]) ans += ((*this)<<i);
+	uint23_t curl = int((this->num[22]) ? (~(*this) + int23_t(1)) : (*this));
+	uint23_t curr = int((rhs.num[22]) ? (~rhs + int23_t(1)) : rhs);
+	int23_t ans = int(curl * curr);
+	if(this->num[22] ^ rhs.num[22]) {
+		ans = ~ans + int23_t(1);
 	}
 	return ans;
 }
@@ -106,77 +111,23 @@ int23_t::int23_t& int23_t::int23_t::operator>>=(int const&rhs) {
 	this->num = (*this >> rhs).num;
 	return *this;
 }
-
-// TODO: Fix operator / and operator %
-
 int23_t::int23_t int23_t::int23_t::operator/(int23_t const&rhs) const {
-	if(rhs.num.none()) {
-		throw std::domain_error("Even though 23 is holy, it still doesn't have superpowers for division by zero");
-	}
-	int23_t ans;
-	int23_t tmp = rhs;
-	if(this->num.none()) return ans;	
-	if(*this == rhs) {
-		ans.num[0] = 1;
-		return ans;
-	}
-	int23_t rem = *this;
-	if(*this < rhs) {
-		return ans;
-	}
-	int sig_x, sig_y;
-	for(int i=22; i>=0; i--) {
-		sig_x = i;
-		if(this->num[i]) break;
-	}
-	for(int i=22; i>=0; i--) {
-		sig_y = i;
-		if(rhs.num[i]) break;
-	}
-	int diff = sig_x - sig_y;
-	tmp <<= diff;
-	diff++;
-	while(diff--) {
-		if(tmp<=rem) {
-			ans.num[diff] = 1;
-			rem -= tmp;
-		}
-		tmp >>= 1;
+	uint23_t curl = int((this->num[22]) ? (~(*this) + int23_t(1)) : (*this));
+	uint23_t curr = int((rhs.num[22]) ? (~rhs + int23_t(1)) : rhs);
+	int23_t ans = int(curl / curr);
+	if(this->num[22] ^ rhs.num[22]) {
+		ans = ~ans + int23_t(1);
 	}
 	return ans;
 }
 int23_t::int23_t int23_t::int23_t::operator%(int23_t const&rhs) const {
-	if(rhs.num.none()) {
-		throw std::domain_error("Even though 23 is holy, it still doesn't have superpowers for modulo of zero");
+	uint23_t curl = int((this->num[22]) ? (~(*this) + int23_t(1)) : (*this));
+	uint23_t curr = int((rhs.num[22]) ? (~rhs + int23_t(1)) : rhs);
+	int23_t ans = int(curl % curr);
+	if(this->num[22] ^ rhs.num[22]) {
+		ans = ~ans + int23_t(1);
 	}
-	int23_t tmp = rhs;
-	if(this->num.none()) return 0;	
-	if(*this == rhs) {
-		return 0;
-	}
-	int23_t rem = *this;
-	if(*this < rhs) {
-		return rem;
-	}
-	int sig_x, sig_y;
-	for(int i=22; i>=0; i--) {
-		sig_x = i;
-		if(this->num[i]) break;
-	}
-	for(int i=22; i>=0; i--) {
-		sig_y = i;
-		if(rhs.num[i]) break;
-	}
-	int diff = sig_x - sig_y;
-	tmp <<= diff;
-	diff++;
-	while(diff--) {
-		if(tmp<=rem) {
-			rem -= tmp;
-		}
-		tmp >>= 1;
-	}
-	return rem;
+	return ans;
 }
 int23_t::int23_t& int23_t::int23_t::operator/=(int23_t const&rhs) {
 	this->num = (*this / rhs).num;
@@ -199,16 +150,15 @@ int23_t::int23_t::operator std::string() const {
 	bool a = false;
 	if(tmp < int23_t(0)){
 		a = true;
-		tmp *= int23_t(-1);
-		tmp--;
+		tmp = ~tmp + int23_t(1);
 	}
 	while(tmp) {
 		ans.push_back(int(tmp % int23_t(10)) + '0');
 		tmp /= int23_t(10);
 	}
+	if(ans.size()==0) ans.push_back('0');
 	if(a) ans.push_back('-');
 	std::reverse(ans.begin(), ans.end());
-	if(ans.size()==0) ans.push_back('0');
 	return ans;
 }
 std::ostream& int23_t::operator<<(std::ostream& out, int23_t const&num) {
