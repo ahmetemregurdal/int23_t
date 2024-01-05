@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(int23_t VERSION 0.0.1 DESCRIPTION "Since 23 is holy, we created int23_t")
+project(int23_t VERSION 0.1.0 DESCRIPTION "Since 23 is holy, we created int23_t")
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 file(GLOB SOURCES src/*.cpp)
