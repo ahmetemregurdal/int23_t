@@ -1,0 +1,58 @@
+\doxysection{uint23\+\_\+t.\+hpp}
+\hypertarget{uint23__t_8hpp_source}{}\label{uint23__t_8hpp_source}\index{include/uint23\_t.hpp@{include/uint23\_t.hpp}}
+\mbox{\hyperlink{uint23__t_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <bitset>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <type\_traits>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{shared_8hpp}{shared.hpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }int23\_t\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::bitset<23>\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a5dbba6fb777d2065ea934416aabe8682}{num}};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_ad51b39b609bbf0795b2f4e71c010ac66}{operator<=\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a7bed1e2bcf9681811fd26f5517d191b5}{operator<\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a94661cc5c91f6166324a04b924ae8384}{operator>=\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_ac442c28cbb31416e651f2497d81102a5}{operator>\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_ad0f2f7227ac42fa8900e2491a0ee8cdc}{operator+\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a29171ddcce02e2a475bdb4c55dd75740}{operator-\/\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a2b9ff8feeef2f153718423610c9d81d2}{operator*\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ template\ <typename\ T,\ typename\ std::enable\_if<std::is\_arithmetic<T>::value,\ \textcolor{keywordtype}{int}>::type\ =\ 0>}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t_a61172647e7fb19e6bdcf5079b7b147c7}{uint23\_t}}\ (T\ \textcolor{keyword}{const}\&\ a);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ template\ <typename\ T,\ typename\ std::enable\_if<std::is\_arithmetic<T>::value,\ \textcolor{keywordtype}{int}>::type\ =\ 0>}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{operator}\ T\ ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t_a61172647e7fb19e6bdcf5079b7b147c7}{uint23\_t}}();}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a70af7156a939eb8ba7de4f04e07187e7}{operator<<\ }}(\textcolor{keywordtype}{int}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a5d83b3c00134b03455b3c6e823c3c120}{operator>>\ }}(\textcolor{keywordtype}{int}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a481b231de5db4cc6b54906f05018a75a}{operator+=\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs);}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_af1c153ec6ea441fc40d190c53487cdb3}{operator-\/=\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs);}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a9a070fe5e8d807630d67f3b9a4249b66}{operator*=\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs);}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_acbcad2bdabd875ead20f69d4a5209a6f}{operator/=\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs);}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_aab9faa266b1f45f65a2fa2da63d328d9}{operator\%=\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs);}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_af5f2c04bfc4ccb9e8ceadad4ac03a483}{operator++\ }}();}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a70574f4759c7087d4597bbd8141a0023}{operator-\/-\/\ }}();}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_af5f2c04bfc4ccb9e8ceadad4ac03a483}{operator++\ }}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a70574f4759c7087d4597bbd8141a0023}{operator-\/-\/\ }}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a94b492ea873722c57de6997d17ead8f1}{operator==\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_af9a23f0211cd1107804f070cdd481736}{operator/\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_ad5adcae8522f4fef04c09a0d1760d181}{operator\%\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_ae1a8539d12895acf600fa221435da6bf}{operator>>=\ }}(\textcolor{keywordtype}{int}\ \textcolor{keyword}{const}\&\ rhs);}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a67f0b07bdfc9485c280534f28f48aa13}{operator<<=\ }}(\textcolor{keywordtype}{int}\ \textcolor{keyword}{const}\&\ rhs);}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_aea39812100e815d12dd3bc451f922267}{operator\&\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a7f2560da22c4e3a16d4bce9a8db0e505}{operator|\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_accc256271e9a9f7702f9f76df8a37426}{operator\string^\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_aad69ac608385c5f712a8e62285c10341}{operator\&=\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs);}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a6c478d390206801b05191f3e653de860}{operator|=\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs);}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&\ \mbox{\hyperlink{classint23__t_1_1uint23__t_ab05535887b8a002615de9ce1151ef89c}{operator\string^=\ }}(\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&\ rhs);}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \textcolor{keyword}{operator}\ std::string()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{classint23__t_1_1uint23__t_a05b9940c785029021e49c7de59b1c0ef}{operator\string~}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00225\ \ \ \ \ \};}
+\DoxyCodeLine{00226\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{uint23__t_8hpp_a97213726943c4e3c6a9143c106e45b1b}{UINT23\_MAX}}(8388607);\ }
+\DoxyCodeLine{00227\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \mbox{\hyperlink{uint23__t_8hpp_a394f88afbad92f3475abf5beb64a0315}{UINT23\_MIN}}(0);\ }
+\DoxyCodeLine{00234\ \ \ \ \ std::ostream\&\ operator<<\ (std::ostream\&out,\ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\ \textcolor{keyword}{const}\&num);}
+\DoxyCodeLine{00241\ \ \ \ \ std::istream\&\ operator>>\ (std::istream\&in,\ \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\_t}}\&num);}
+\DoxyCodeLine{00242\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_int23__t_8hpp" xml:lang="en-US">
+<title>include/int23_t.hpp File Reference</title>
+<indexterm><primary>include/int23_t.hpp</primary></indexterm>
+<para>
+
+<para>Main header file for int23_t class. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;bitset&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;type_traits&gt;<?linebreak?>#include &quot;shared.hpp&quot;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classint23__t_1_1int23__t">int23_t::int23_t</link></para>
+
+<para>23 bit integer </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::ostream &amp; <link linkend="_int23__t_8hpp_1aba60b8aabd97fd4d198e3058ec0ba340">int23_t::operator&lt;&lt;</link> (std::ostream &amp;out, <link linkend="_classint23__t_1_1int23__t">int23_t</link> const &amp;num)</para>
+
+<para>Operator for outputting an int23_t using std::ostream class. </para>
+</listitem>
+            <listitem><para>std::istream &amp; <link linkend="_int23__t_8hpp_1a3570d947f0aec8f170ebb053b5a0a939">int23_t::operator&gt;&gt;</link> (std::istream &amp;in, <link linkend="_classint23__t_1_1int23__t">int23_t</link> &amp;num)</para>
+
+<para>Operator for inputting an int23_t using std::istream class. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>const <link linkend="_classint23__t_1_1int23__t">int23_t</link> <link linkend="_int23__t_8hpp_1a9bab4903fba378abc1acdf4968312aa2">int23_t::INT23_MAX</link> (8388607)</para>
+</listitem>
+            <listitem><para>const <link linkend="_classint23__t_1_1int23__t">int23_t</link> <link linkend="_int23__t_8hpp_1a4bbaf0efec4846bf8f1f624114f52910">int23_t::INT23_MIN</link> (0)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Main header file for int23_t class. </para>
+
+<para>Contiains Functions required to make int23_t work </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_int23__t_8hpp_1aba60b8aabd97fd4d198e3058ec0ba340"/><section>
+    <title>operator&lt;&lt;()</title>
+<indexterm><primary>operator&lt;&lt;</primary><secondary>int23_t.hpp</secondary></indexterm>
+<indexterm><primary>int23_t.hpp</primary><secondary>operator&lt;&lt;</secondary></indexterm>
+<para><computeroutput>std::ostream &amp; int23_t::operator&lt;&lt; (std::ostream &amp; out, <link linkend="_classint23__t_1_1int23__t">int23_t</link> const &amp; num)</computeroutput></para><para>
+
+<para>Operator for outputting an int23_t using std::ostream class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>out</entry><entry>
+<para>Variable used for outputting, from std::ostream class like std::cout, see also <link xlink:href="https://en.cppreference.com/w/cpp/io/basic_ostream">https://en.cppreference.com/w/cpp/io/basic_ostream</link> </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>num</entry><entry>
+<para>Variable thats outputted, from int23_t class</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Converts int23_t to std::string to output integer </para>
+</section>
+<anchor xml:id="_int23__t_8hpp_1a3570d947f0aec8f170ebb053b5a0a939"/><section>
+    <title>operator&gt;&gt;()</title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>int23_t.hpp</secondary></indexterm>
+<indexterm><primary>int23_t.hpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::istream &amp; int23_t::operator&gt;&gt; (std::istream &amp; in, <link linkend="_classint23__t_1_1int23__t">int23_t</link> &amp; num)</computeroutput></para><para>
+
+<para>Operator for inputting an int23_t using std::istream class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>in</entry><entry>
+<para>Variable used for inputting, from std::istream class like std::cin, see also <link xlink:href="https://en.cppreference.com/w/cpp/io/basic_istream">https://en.cppreference.com/w/cpp/io/basic_istream</link> </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>num</entry><entry>
+<para>Variable thats inputted, from int23_t class</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Inputs int32_t and converts it to int23_t internally </para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_int23__t_8hpp_1a9bab4903fba378abc1acdf4968312aa2"/><section>
+    <title>INT23_MAX</title>
+<indexterm><primary>INT23_MAX</primary><secondary>int23_t.hpp</secondary></indexterm>
+<indexterm><primary>int23_t.hpp</primary><secondary>INT23_MAX</secondary></indexterm>
+<para><computeroutput>const int23_t int23_t::INT23_MAX(8388607) (8388607 )</computeroutput></para>
+<para>The maximum value of integers of class int23_t </para>
+</section>
+<anchor xml:id="_int23__t_8hpp_1a4bbaf0efec4846bf8f1f624114f52910"/><section>
+    <title>INT23_MIN</title>
+<indexterm><primary>INT23_MIN</primary><secondary>int23_t.hpp</secondary></indexterm>
+<indexterm><primary>int23_t.hpp</primary><secondary>INT23_MIN</secondary></indexterm>
+<para><computeroutput>const int23_t int23_t::INT23_MIN(0) (0 )</computeroutput></para>
+<para>The minimum value of integers of class int23_t, 0 because it is unsigned </para>
+</section>
+</section>
+</section>
