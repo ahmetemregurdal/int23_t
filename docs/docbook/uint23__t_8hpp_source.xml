@@ -48,10 +48,11 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;&#32;<link linkend="_classint23__t_1_1uint23__t_1ab05535887b8a002615de9ce1151ef89c">operator^= </link>(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;&#32;rhs);
 221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">operator</emphasis>&#32;std::string()&#32;<emphasis role="keyword">const</emphasis>;
 224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<link linkend="_classint23__t_1_1uint23__t_1a05b9940c785029021e49c7de59b1c0ef">operator~</link>()&#32;<emphasis role="keyword">const</emphasis>;
-225 &#32;&#32;&#32;&#32;};
-226 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<link linkend="_uint23__t_8hpp_1a97213726943c4e3c6a9143c106e45b1b">UINT23_MAX</link>(8388607);&#32;
-227 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<link linkend="_uint23__t_8hpp_1a394f88afbad92f3475abf5beb64a0315">UINT23_MIN</link>(0);&#32;
-234 &#32;&#32;&#32;&#32;std::ostream&amp;&#32;operator&lt;&lt;&#32;(std::ostream&amp;out,&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;num);
-241 &#32;&#32;&#32;&#32;std::istream&amp;&#32;operator&gt;&gt;&#32;(std::istream&amp;in,&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;num);
-242 }
+228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t_1a4e773df781c15f4fa0b37cd716fee678">operator!=</link>(<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;&#32;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+229 &#32;&#32;&#32;&#32;};
+230 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<link linkend="_uint23__t_8hpp_1a97213726943c4e3c6a9143c106e45b1b">UINT23_MAX</link>(8388607);&#32;
+231 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<link linkend="_uint23__t_8hpp_1a394f88afbad92f3475abf5beb64a0315">UINT23_MIN</link>(0);&#32;
+238 &#32;&#32;&#32;&#32;std::ostream&amp;&#32;operator&lt;&lt;&#32;(std::ostream&amp;out,&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;num);
+245 &#32;&#32;&#32;&#32;std::istream&amp;&#32;operator&gt;&gt;&#32;(std::istream&amp;in,&#32;<link linkend="_classint23__t_1_1uint23__t">uint23_t</link>&amp;num);
+246 }
 </programlisting></section>

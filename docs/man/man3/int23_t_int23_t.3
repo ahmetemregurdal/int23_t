@@ -148,6 +148,10 @@ int23_t::int23_t \- 23 bit integer
 .RI "\fBint23_t\fP \fBoperator~\fP () const"
 .br
 .RI "Invert every bit operator\&. "
+.ti -1c
+.RI "bool \fBoperator!=\fP (\fBint23_t\fP const &rhs) const"
+.br
+.RI "Operator for finding if two numbers are not eqal\&. "
 .in -1c
 .SS "Public Attributes"
 
@@ -182,6 +186,17 @@ Default constructor for \fBint23_t\fP, sets the value to 0\&. Does the same thin
 
 .PP
 An operator for converting \fBint23_t\fP to arithmetic types\&. see also https://en.cppreference.com/w/c/language/arithmetic_types\&. Uses std::bitset::to_ulong function\&. See also https://en.cppreference.com/w/cpp/utility/bitset/to_ulong 
+.SS "bool int23_t::int23_t::operator!= (\fBint23_t\fP const & rhs) const"
+
+.PP
+Operator for finding if two numbers are not eqal\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP Right hand side \fBint23_t\fP 
+.RE
+.PP
+
 .SS "\fBint23_t::int23_t\fP int23_t::int23_t::operator% (\fBint23_t\fP const & rhs) const"
 
 .PP

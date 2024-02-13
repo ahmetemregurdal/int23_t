@@ -149,6 +149,10 @@
 
 <para>Invert every bit operator. </para>
 </listitem>
+            <listitem><para>bool <link linkend="_classint23__t_1_1uint23__t_1a4e773df781c15f4fa0b37cd716fee678">operator!=</link> (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp;rhs) const</para>
+
+<para>Operator for finding if two numbers are not eqal. </para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
@@ -221,6 +225,38 @@ Parameters</title>
 </para>
 
 <para>Uses std::bitset::to_ulong function. See also <link xlink:href="https://en.cppreference.com/w/cpp/utility/bitset/to_ulong">https://en.cppreference.com/w/cpp/utility/bitset/to_ulong</link> </para>
+</section>
+<anchor xml:id="_classint23__t_1_1uint23__t_1a4e773df781c15f4fa0b37cd716fee678"/><section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>int23_t::uint23_t</secondary></indexterm>
+<indexterm><primary>int23_t::uint23_t</primary><secondary>operator!=</secondary></indexterm>
+<para><computeroutput>bool int23_t::uint23_t::operator!= (<link linkend="_classint23__t_1_1uint23__t">uint23_t</link> const &amp; rhs) const</computeroutput></para><para>
+
+<para>Operator for finding if two numbers are not eqal. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>rhs</entry><entry>
+<para>Right hand side <link linkend="_classint23__t_1_1int23__t">int23_t</link> </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
 </section>
 <anchor xml:id="_classint23__t_1_1uint23__t_1ad5adcae8522f4fef04c09a0d1760d181"/><section>
     <title>operator%()</title>

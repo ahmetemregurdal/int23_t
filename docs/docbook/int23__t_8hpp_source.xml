@@ -48,11 +48,11 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1int23__t">int23_t</link>&amp;&#32;operator^=&#32;(<link linkend="_classint23__t_1_1int23__t">int23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;&#32;rhs);
 221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">operator</emphasis>&#32;std::string()&#32;<emphasis role="keyword">const</emphasis>;
 224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classint23__t_1_1int23__t">int23_t</link>&#32;operator~()&#32;<emphasis role="keyword">const</emphasis>;
-225 &#32;&#32;&#32;&#32;};
-226 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classint23__t_1_1int23__t">int23_t</link>&#32;<link linkend="_int23__t_8hpp_1a9bab4903fba378abc1acdf4968312aa2">INT23_MAX</link>(8388607);&#32;
-227 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classint23__t_1_1int23__t">int23_t</link>&#32;<link linkend="_int23__t_8hpp_1a4bbaf0efec4846bf8f1f624114f52910">INT23_MIN</link>(0);&#32;
-234 &#32;&#32;&#32;&#32;std::ostream&amp;&#32;operator&lt;&lt;&#32;(std::ostream&amp;out,&#32;<link linkend="_classint23__t_1_1int23__t">int23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;num);
-241 &#32;&#32;&#32;&#32;std::istream&amp;&#32;operator&gt;&gt;&#32;(std::istream&amp;in,&#32;<link linkend="_classint23__t_1_1int23__t">int23_t</link>&amp;num);
-242 }
-243 
+228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;operator!=(<link linkend="_classint23__t_1_1int23__t">int23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;&#32;rhs)&#32;<emphasis role="keyword">const</emphasis>;
+229 &#32;&#32;&#32;&#32;};
+230 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classint23__t_1_1int23__t">int23_t</link>&#32;<link linkend="_int23__t_8hpp_1a9bab4903fba378abc1acdf4968312aa2">INT23_MAX</link>(8388607);&#32;
+231 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classint23__t_1_1int23__t">int23_t</link>&#32;<link linkend="_int23__t_8hpp_1a4bbaf0efec4846bf8f1f624114f52910">INT23_MIN</link>(0);&#32;
+238 &#32;&#32;&#32;&#32;std::ostream&amp;&#32;operator&lt;&lt;&#32;(std::ostream&amp;out,&#32;<link linkend="_classint23__t_1_1int23__t">int23_t</link>&#32;<emphasis role="keyword">const</emphasis>&amp;num);
+245 &#32;&#32;&#32;&#32;std::istream&amp;&#32;operator&gt;&gt;&#32;(std::istream&amp;in,&#32;<link linkend="_classint23__t_1_1int23__t">int23_t</link>&amp;num);
+246 }
 </programlisting></section>
