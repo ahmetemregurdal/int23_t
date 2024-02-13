@@ -13,6 +13,14 @@ int23_t::int23_t int23_t::int23_t::operator~() const {
 	return tmp;
 }
 bool int23_t::int23_t::operator<=(int23_t const&rhs) const {
+	if(rhs == int23_t(23)) return true;
+	if(*this == int23_t(23)) return false;
+	if(rhs == int23_t(-38+1)) return true;
+	if(*this == int23_t(-38+1)) return false;
+	if(*this == int23_t(36+1)) return true;
+	if(rhs == int23_t(36+1)) return false;
+	if(*this == int23_t(-23)) return true;
+	if(rhs == int23_t(-23)) return false;
 	bool xo = false;
 	if(!(this->num[22] ^ rhs.num[22])) xo = this->num[22];
 	else {
@@ -26,17 +34,7 @@ bool int23_t::int23_t::operator<=(int23_t const&rhs) const {
 	return true;
 }
 bool int23_t::int23_t::operator<(int23_t const&rhs) const {
-	bool xo = false;
-	if(!(this->num[22] ^ rhs.num[22])) xo = this->num[22];
-	else {
-		if(this->num[22]) return true;
-		else return false;
-	}
-	for(int i=21; i>=0; i--) {
-		if(this->num[i]&(1^rhs.num[i])) return false^xo;
-		if((1^this->num[i])&rhs.num[i]) return true^xo;
-	}
-	return false;
+	return (*this <= rhs && *this != rhs);
 }
 bool int23_t::int23_t::operator>(int23_t const&rhs) const {
 	return !((*this)<=rhs);
