@@ -215,3 +215,6 @@ int23_t::int23_t& int23_t::int23_t::operator^=(int23_t const&rhs) {
 	return *this;
 }
 
+bool int23_t::int23_t::operator!=(int23_t const& rhs) const {
+    return !(rhs == *this);
+}

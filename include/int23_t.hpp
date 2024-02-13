@@ -222,6 +222,10 @@ namespace int23_t {
 		/*! @brief Invert every bit operator
 		 */
 		int23_t operator~() const;
+        /*! @brief Operator for finding if two numbers are not eqal
+         * @param[in] rhs Right hand side int23_t
+         */
+        bool operator!=(int23_t const& rhs) const;
 	};
 	const int23_t INT23_MAX(8388607); /*!< The maximum value of integers of class int23_t */
 	const int23_t INT23_MIN(0); /*!< The minimum value of integers of class int23_t, 0 because it is unsigned */
@@ -240,4 +244,3 @@ namespace int23_t {
 	 */
 	std::istream& operator>> (std::istream&in, int23_t&num);
 }
-

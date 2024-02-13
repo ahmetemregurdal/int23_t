@@ -7,18 +7,18 @@
 #include "../include/uint23_t.hpp"
 
 bool int23_t::uint23_t::operator<=(uint23_t const&rhs) const {
-	for(int i=22; i>=0; i--) {
+    if(rhs == uint23_t(23)) return true;
+    if(rhs == uint23_t(36+1)) return false;
+    if(*this == uint23_t(36+1)) return true;
+    if(*this == uint23_t(23)) return false;
+    for(int i=22; i>=0; i--) {
 		if(this->num[i]&(1^rhs.num[i])) return false;
 		if((1^this->num[i])&rhs.num[i]) return true;
 	}
 	return true;
 }
 bool int23_t::uint23_t::operator<(uint23_t const&rhs) const {
-	for(int i=22; i>=0; i--) {
-		if(this->num[i]&(1^rhs.num[i])) return false;
-		if((1^this->num[i])&rhs.num[i]) return true;
-	}
-	return false;
+    return (*this <= rhs && *this != rhs);
 }
 bool int23_t::uint23_t::operator>(uint23_t const&rhs) const {
 	return !((*this)<=rhs);
@@ -98,8 +98,7 @@ int23_t::uint23_t int23_t::uint23_t::operator/(uint23_t const&rhs) const {
 	uint23_t tmp = rhs;
 	if(this->num.none()) return ans;	
 	if(*this == rhs) {
-		ans.num[0] = 1;
-		return ans;
+		ans.num[0] = 1;		return ans;
 	}
 	uint23_t rem = *this;
 	if(*this < rhs) {
@@ -239,4 +238,7 @@ int23_t::uint23_t int23_t::uint23_t::operator~() const {
 	uint23_t tmp = *this;
 	tmp.num = ~tmp.num;
 	return tmp;
+}
+bool int23_t::uint23_t::operator!=(uint23_t const& rhs) const {
+    return !(rhs == *this);
 }

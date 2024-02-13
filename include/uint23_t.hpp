@@ -222,6 +222,10 @@ namespace int23_t {
 		/*! @brief Invert every bit operator
 		 */
 		uint23_t operator~() const;
+        /*! @brief Operator for finding if two numbers are not eqal
+         * @param[in] rhs Right hand side int23_t
+         */
+        bool operator!=(uint23_t const& rhs) const;
 	};
 	const uint23_t UINT23_MAX(8388607); /*!< The maximum value of integers of class uint23_t */
 	const uint23_t UINT23_MIN(0); /*!< The minimum value of integers of class uint23_t, 0 because it is unsigned */
