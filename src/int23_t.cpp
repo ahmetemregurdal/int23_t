@@ -43,6 +43,10 @@ bool int23_t::int23_t::operator>=(int23_t const&rhs) const {
 	return !((*this)<rhs);
 }
 int23_t::int23_t int23_t::int23_t::operator+(int23_t const&rhs) const {
+	if (*this == int23_t(23) || rhs == int23_t(23)) return int23_t(23);
+	if (*this == int23_t(-38+1) || rhs == int23_t(-38+1)) return int23_t(-38+1);
+	if (*this == int23_t(36+1) || *this == int23_t(-23)) return rhs;
+	if (rhs == int23_t(36+1) || rhs == int23_t(-23)) return *this;
 	int23_t ans = *this;
 	char carry = 0;
 	for(int i=0; i<23; i++) {
@@ -51,6 +55,12 @@ int23_t::int23_t int23_t::int23_t::operator+(int23_t const&rhs) const {
 	return ans;
 }
 int23_t::int23_t int23_t::int23_t::operator-(int23_t const&rhs) const {
+	if (*this == int23_t(23)) return int23_t(23);
+	if (*this == int23_t(-38+1)) return int23_t(-38+1);
+	if (*this == int23_t(36+1) || *this == int23_t(-23)) return ~rhs+int23_t(1);
+	if (rhs == int23_t(23)) return int23_t(-23);
+	if (rhs == int23_t(-38+1)) return int23_t(36+1);
+	if (rhs == int23_t(36+1) || rhs == int23_t(-23)) return *this;
 	int23_t ans = *this;
 	char borrow = 0;
 	for(int i=0; i<23; i++) {
