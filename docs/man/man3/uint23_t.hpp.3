@@ -1,0 +1,92 @@
+.TH "include/uint23_t.hpp" 3 "INT23_t" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/uint23_t.hpp \- Main header file for uint23_t class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <bitset>\fP
+.br
+\fR#include <iostream>\fP
+.br
+\fR#include <string>\fP
+.br
+\fR#include <type_traits>\fP
+.br
+\fR#include 'shared\&.hpp'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBint23_t::uint23_t\fP"
+.br
+.RI "Unsigned 23 bit integer\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBint23_t::operator<<\fP (std::ostream &out, \fBuint23_t\fP const &num)"
+.br
+.RI "Operator for outputting an \fBuint23_t\fP using std::ostream class\&. "
+.ti -1c
+.RI "std::istream & \fBint23_t::operator>>\fP (std::istream &in, \fBuint23_t\fP &num)"
+.br
+.RI "Operator for inputting an \fBuint23_t\fP using std::istream class\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBuint23_t\fP \fBint23_t::UINT23_MAX\fP (8388607)"
+.br
+.ti -1c
+.RI "const \fBuint23_t\fP \fBint23_t::UINT23_MIN\fP (0)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main header file for uint23_t class\&. 
+
+Contiains Functions required to make uint23_t work 
+.SH "Function Documentation"
+.PP 
+.SS "std::ostream & int23_t::operator<< (std::ostream & out, \fBuint23_t\fP const & num)"
+
+.PP
+Operator for outputting an uint23_t using std::ostream class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIout\fP Variable used for outputting, from std::ostream class like std::cout, see also https://en.cppreference.com/w/cpp/io/basic_ostream 
+.br
+\fInum\fP Variable thats outputted, from uint23_t class
+.RE
+.PP
+Converts uint23_t to std::string to output integer 
+.SS "std::istream & int23_t::operator>> (std::istream & in, \fBuint23_t\fP & num)"
+
+.PP
+Operator for inputting an uint23_t using std::istream class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIin\fP Variable used for inputting, from std::istream class like std::cin, see also https://en.cppreference.com/w/cpp/io/basic_istream 
+.br
+\fInum\fP Variable thats inputted, from uint23_t class
+.RE
+.PP
+Inputs int32_t and converts it to uint23_t internally 
+.SH "Variable Documentation"
+.PP 
+.SS "const uint23_t int23_t::UINT23_MAX(8388607) (8388607)"
+The maximum value of integers of class uint23_t 
+.SS "const uint23_t int23_t::UINT23_MIN(0) (0)"
+The minimum value of integers of class uint23_t, 0 because it is unsigned 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for INT23_t from the source code\&.

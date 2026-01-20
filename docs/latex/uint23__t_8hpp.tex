@@ -1,0 +1,89 @@
+\doxysection{include/uint23\+\_\+t.hpp File Reference}
+\hypertarget{uint23__t_8hpp}{}\label{uint23__t_8hpp}\index{include/uint23\_t.hpp@{include/uint23\_t.hpp}}
+
+
+Main header file for uint23\+\_\+t class.  
+
+
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include "{}shared.\+hpp"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classint23__t_1_1uint23__t}{int23\+\_\+t\+::uint23\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Unsigned 23 bit integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{uint23__t_8hpp_a1914e870f88b2b77ef011daaab58f499}{int23\+\_\+t\+::operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} const \&num)
+\begin{DoxyCompactList}\small\item\em Operator for outputting an \doxylink{classint23__t_1_1uint23__t}{uint23\+\_\+t} using std\+::ostream class. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{uint23__t_8hpp_aebe3191c1e0c8e2c74e9c90b6d5e56b6}{int23\+\_\+t\+::operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \&num)
+\begin{DoxyCompactList}\small\item\em Operator for inputting an \doxylink{classint23__t_1_1uint23__t}{uint23\+\_\+t} using std\+::istream class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \mbox{\hyperlink{uint23__t_8hpp_a97213726943c4e3c6a9143c106e45b1b}{int23\+\_\+t\+::\+UINT23\+\_\+\+MAX}} (8388607)
+\item 
+const \mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \mbox{\hyperlink{uint23__t_8hpp_a394f88afbad92f3475abf5beb64a0315}{int23\+\_\+t\+::\+UINT23\+\_\+\+MIN}} (0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main header file for uint23\+\_\+t class. 
+
+Contiains Functions required to make uint23\+\_\+t work 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{uint23__t_8hpp_a1914e870f88b2b77ef011daaab58f499}\label{uint23__t_8hpp_a1914e870f88b2b77ef011daaab58f499} 
+\index{uint23\_t.hpp@{uint23\_t.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!uint23\_t.hpp@{uint23\_t.hpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream \& int23\+\_\+t\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} const \&}]{num }\end{DoxyParamCaption})}
+
+
+
+Operator for outputting an uint23\+\_\+t using std\+::ostream class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em out} & Variable used for outputting, from std\+::ostream class like std\+::cout, see also \href{https://en.cppreference.com/w/cpp/io/basic_ostream}{\texttt{ https\+://en.\+cppreference.\+com/w/cpp/io/basic\+\_\+ostream}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em num} & Variable thats outputted, from uint23\+\_\+t class\\
+\hline
+\end{DoxyParams}
+Converts uint23\+\_\+t to std\+::string to output integer \Hypertarget{uint23__t_8hpp_aebe3191c1e0c8e2c74e9c90b6d5e56b6}\label{uint23__t_8hpp_aebe3191c1e0c8e2c74e9c90b6d5e56b6} 
+\index{uint23\_t.hpp@{uint23\_t.hpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!uint23\_t.hpp@{uint23\_t.hpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily std\+::istream \& int23\+\_\+t\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{classint23__t_1_1uint23__t}{uint23\+\_\+t}} \&}]{num }\end{DoxyParamCaption})}
+
+
+
+Operator for inputting an uint23\+\_\+t using std\+::istream class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em in} & Variable used for inputting, from std\+::istream class like std\+::cin, see also \href{https://en.cppreference.com/w/cpp/io/basic_istream}{\texttt{ https\+://en.\+cppreference.\+com/w/cpp/io/basic\+\_\+istream}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em num} & Variable thats inputted, from uint23\+\_\+t class\\
+\hline
+\end{DoxyParams}
+Inputs int32\+\_\+t and converts it to uint23\+\_\+t internally 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{uint23__t_8hpp_a97213726943c4e3c6a9143c106e45b1b}\label{uint23__t_8hpp_a97213726943c4e3c6a9143c106e45b1b} 
+\index{uint23\_t.hpp@{uint23\_t.hpp}!UINT23\_MAX@{UINT23\_MAX}}
+\index{UINT23\_MAX@{UINT23\_MAX}!uint23\_t.hpp@{uint23\_t.hpp}}
+\doxysubsubsection{\texorpdfstring{UINT23\_MAX}{UINT23\_MAX}}
+{\footnotesize\ttfamily const uint23\+\_\+t int23\+\_\+t\+::\+UINT23\+\_\+\+MAX(8388607) (\begin{DoxyParamCaption}\item[{8388607}]{ }\end{DoxyParamCaption})}
+
+The maximum value of integers of class uint23\+\_\+t \Hypertarget{uint23__t_8hpp_a394f88afbad92f3475abf5beb64a0315}\label{uint23__t_8hpp_a394f88afbad92f3475abf5beb64a0315} 
+\index{uint23\_t.hpp@{uint23\_t.hpp}!UINT23\_MIN@{UINT23\_MIN}}
+\index{UINT23\_MIN@{UINT23\_MIN}!uint23\_t.hpp@{uint23\_t.hpp}}
+\doxysubsubsection{\texorpdfstring{UINT23\_MIN}{UINT23\_MIN}}
+{\footnotesize\ttfamily const uint23\+\_\+t int23\+\_\+t\+::\+UINT23\+\_\+\+MIN(0) (\begin{DoxyParamCaption}\item[{0}]{ }\end{DoxyParamCaption})}
+
+The minimum value of integers of class uint23\+\_\+t, 0 because it is unsigned 
